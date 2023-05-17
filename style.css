@@ -56,13 +56,40 @@ header
     border-left: 1px solid #707070;
     height: 40px;
 }
+/*-----------------------------------YDELSER---------------------------------------*/
 
 .introvideo video
 {
     width: 100%;
     height: 80vh;
     object-fit: cover;
-    position: absolute;
+    display: block;
 
 
 }
+
+.ydelser
+{
+    text-align: center;
+    top:0;
+    background-color: #eee8e1;
+}
+
+.ydelser h1
+{
+    padding: 8px;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #707070;
+}
+
+.ydelser h2
+{
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;   
+}
+
+
