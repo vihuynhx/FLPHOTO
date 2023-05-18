@@ -27,7 +27,7 @@ header
     display: flex;
 }
 
-#logo img
+#logo a img
 {  
     width: 6vw;
     padding-left: 13px;
