@@ -19,12 +19,11 @@ body
 }
 
 .menu div{
-
     display: flex;
 }
 
 .menu div a{
-  margin: auto;
+    margin: auto;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
@@ -40,7 +39,6 @@ body
     margin-left: -25%;
     margin-right: -25%;
 }
-
 
 
 .gallery {
