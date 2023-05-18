@@ -51,7 +51,6 @@ body
     height: 450px;
     background-color: pink;
 }
-<<<<<<< HEAD
 
 .billedkasser #row12{
     height: 400px;
@@ -62,7 +61,7 @@ body
     height: 480px;
     background-color: pink;
 }
-=======
+
 /*------------------------------*/
 .gallerimenu
 {
@@ -74,4 +73,4 @@ streg
     border-left: 1px solid #707070;
     height: 40px;
 }
->>>>>>> a718684d4349e39d1351e804c9dcbd43d7b3d8b0
+
