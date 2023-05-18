@@ -15,8 +15,6 @@
     
 }
 
-
-
 .menu div a{
   margin: auto;
     font-family: freight-neo-pro, sans-serif;  
@@ -32,4 +30,14 @@
     height: 38px;
     margin-left: -25%;
     margin-right: -25%;
+}
+
+.billedkasser div{
+    width: 500px
+    
+}
+
+.billedkasser #row11{
+    height: 505px;
+    background-color: pink;
 }
