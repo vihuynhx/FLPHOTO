@@ -12,6 +12,11 @@ body
 }
 /*--------------MAIN--------------*/
 
+/*----undermenuen på siden----*/
+
+.menu{
+    margin: 4%;
+}
 
 .menu div{
 
@@ -35,17 +40,43 @@ body
     margin-right: -25%;
 }
 
+
 .billedkasser{
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 100px;
 }
+
+.billedkasser div{
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.billedkasser #row11{
+    height: 390px;
+    background-color: pink;
+}
+
+
+.billedkasser #row12{
+    height: 320px;
+    background-color: pink;
+}
+
+.billedkasser #row13{
+    height: 420px;
+    background-color: pink;
+}
+
 
 .billedkasser div{
     width: 380px;
     
 }
+
 
 .billedkasser #row11{
     height: 450px;
@@ -54,23 +85,50 @@ body
 
 .billedkasser #row12{
     height: 400px;
+}
+
+.billedkasser #row21{
+    height: 390px;
+
     background-color: pink;
 }
 
-.billedkasser #row13{
-    height: 480px;
+
+.billedkasser #row22
+{
+    height: 320px;
     background-color: pink;
 }
 
-/*------------------------------*/
 .gallerimenu
 {
     display: flex;
+}    
+
+.billedkasser #row23{
+    height: 200px;
+    background-color: pink;
+
 }
 
-streg
-{
-    border-left: 1px solid #707070;
-    height: 40px;
+.billedkasser #row31{
+    height: 390px;
+    background-color: pink;
+}
+
+
+.billedkasser #row32{
+    height: 320px;
+    background-color: pink;
+}
+
+.billedkasser #row33{
+    height: 200px;
+    background-color: pink;
+}
+
+.billedkasser #row41{
+    height: 200px;
+    background-color: pink;
 }
 
