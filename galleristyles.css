@@ -30,6 +30,7 @@ body
     font-size: 15px;
     color: #707070;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .vertical2
@@ -41,94 +42,15 @@ body
 }
 
 
-.billedkasser{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    margin: 100px;
-}
-
-.billedkasser div{
-    width: 380px;
-    margin-bottom: 20px;
-}
-
-.billedkasser #row11{
-    height: 390px;
-    background-color: pink;
-}
-
-
-.billedkasser #row12{
-    height: 320px;
-    background-color: pink;
-}
-
-.billedkasser #row13{
-    height: 420px;
-    background-color: pink;
-}
-
-
-.billedkasser div{
-    width: 380px;
-    
-}
-
-
-.billedkasser #row11{
-    height: 450px;
-    background-color: pink;
-}
-
-.billedkasser #row12{
-    height: 400px;
-}
-
-.billedkasser #row21{
-    height: 390px;
-
-    background-color: pink;
-}
-
-
-.billedkasser #row22
-{
-    height: 320px;
-    background-color: pink;
-}
-
-.gallerimenu
-{
-    display: flex;
-}    
-
-.billedkasser #row23{
-    height: 200px;
-    background-color: pink;
-
-}
-
-.billedkasser #row31{
-    height: 390px;
-    background-color: pink;
-}
-
-
-.billedkasser #row32{
-    height: 320px;
-    background-color: pink;
-}
-
-.billedkasser #row33{
-    height: 200px;
-    background-color: pink;
-}
-
-.billedkasser #row41{
-    height: 200px;
-    background-color: pink;
-}
-
+.gallery {
+    column-count: 3;
+    column-gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .gallery div {
+    break-inside: avoid;
+  }
+  
+ 
