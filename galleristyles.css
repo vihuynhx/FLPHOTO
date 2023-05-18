@@ -46,7 +46,6 @@ body
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-
     margin: 100px;
 }
 
@@ -72,10 +71,7 @@ body
 }
 
 
-.billedkasser div{
-    width: 380px;
-    
-}
+
 
 
 .billedkasser #row11{
@@ -99,11 +95,6 @@ body
     height: 320px;
     background-color: pink;
 }
-
-.gallerimenu
-{
-    display: flex;
-}    
 
 .billedkasser #row23{
     height: 200px;
