@@ -1,0 +1,139 @@
+*
+{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*--------------HEADER--------------*/
+
+header
+{
+    background-color: white;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+}
+
+#logo
+{
+    width: 50%;
+    display: flex;
+}
+
+#logo a img
+{  
+    width: 6vw;
+    padding-left: 13px;
+    justify-content: center;
+
+}
+
+.links
+{  
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.links a
+{
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #707070;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fa-facebook
+{
+    margin-right: -7px;
+    font-size: 30px;
+}
+
+.fa-instagram
+{
+    margin-left: -7px;
+    font-size: 30px;
+}
+
+.vertical
+{
+    border-left: 1px solid #707070;
+    height: 40px;
+}
+
+
+/*--------------FOOTER--------------*/
+
+footer{
+    background-color: #142D52;
+    display: flex;
+    height: 360px;
+    margin: auto;
+    padding: 80px 0px 80px 80px;
+    align-items: center;
+  }
+
+  footer div{
+    width: 20%;
+    height: 100%;
+  }
+
+  footer h2{
+    margin: auto;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    
+  }
+
+  footer div a{
+    margin: auto;
+      font-family: freight-neo-pro, sans-serif;  
+      text-transform: uppercase;
+      font-size: 15px;
+      color: white;
+      letter-spacing: 1px;
+      line-height: 2;
+      font-weight: 200;
+  }
+
+
+  .vertical3
+{
+    border-right: 1px solid white;
+    height: 90px;
+    display: flex;
+    
+}
+
+footer .fa-facebook
+{
+    margin-right: -60px;
+    font-size: 50px;
+}
+
+footer .fa-instagram
+{
+    margin-left: -60px;
+    font-size: 50px;
+}
+
+footer div:nth-child(4), footer div:nth-child(5){
+    justify-content: center;
+    display: flex;
+}

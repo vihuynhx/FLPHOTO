@@ -12,19 +12,24 @@ body
 }
 /*--------------MAIN--------------*/
 
+/*----undermenuen på siden----*/
+
+.menu{
+    margin: 4%;
+}
 
 .menu div{
-
     display: flex;
 }
 
 .menu div a{
-  margin: auto;
+    margin: auto;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
     color: #707070;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .vertical2
@@ -35,13 +40,26 @@ body
     margin-right: -25%;
 }
 
-.billedkasser div{
-    width: 500px
-    
-}
 
-.billedkasser #row11{
+
+.billedkasser #row11
+{
     height: 505px;
     background-color: pink;
 }
-/*------------------------------*/
+
+.gallery 
+{
+    column-count: 3;
+    column-gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.gallery div 
+{
+    break-inside: avoid; 
+}
+  
+ 
