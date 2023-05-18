@@ -6,17 +6,33 @@
     box-sizing: border-box;
 }
 
-
-
-
 /*--------------MAIN--------------*/
 
 .menu{
+    margin-top: 10%;
+}
+
+.menu div{
+
     display: flex;
+    
 }
 
 
 
+.menu div a{
+  margin: auto;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #707070;
+    letter-spacing: 1px;
+}
 
-
-
+.vertical2
+{
+    border-left: 1px solid #707070;
+    height: 38px;
+    margin-left: -25%;
+    margin-right: -25%;
+}
