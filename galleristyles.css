@@ -31,12 +31,29 @@
     margin-right: -25%;
 }
 
+.billedkasser{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
 .billedkasser div{
-    width: 500px
+    width: 380px;
     
 }
 
 .billedkasser #row11{
-    height: 505px;
+    height: 450px;
+    background-color: pink;
+}
+
+.billedkasser #row12{
+    height: 400px;
+    background-color: pink;
+}
+
+.billedkasser #row13{
+    height: 480px;
     background-color: pink;
 }
