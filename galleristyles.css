@@ -19,12 +19,11 @@ body
 }
 
 .menu div{
-
     display: flex;
 }
 
 .menu div a{
-  margin: auto;
+    margin: auto;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
@@ -43,15 +42,24 @@ body
 
 
 
-.gallery {
+.billedkasser #row11
+{
+    height: 505px;
+    background-color: pink;
+}
+
+.gallery 
+{
     column-count: 3;
     column-gap: 20px;
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
-  }
-  .gallery div {
-    break-inside: avoid;
-  }
+}
+
+.gallery div 
+{
+    break-inside: avoid; 
+}
   
  
