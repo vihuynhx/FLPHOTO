@@ -45,13 +45,3 @@ body
     background-color: pink;
 }
 /*------------------------------*/
-.gallerimenu
-{
-    display: flex;
-}
-
-streg
-{
-    border-left: 1px solid #707070;
-    height: 40px;
-}

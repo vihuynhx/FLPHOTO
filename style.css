@@ -41,54 +41,56 @@
     padding-bottom: 8px;
 }
 
-#kategorier
+.kategori
 {
+    padding-top: 20px;
     display: flex;
-    width: 100%;
-    gap: 12px;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding-bottom: 40px
 }
+  
+  #billedelink
+  {
+    position: relative;
+    gap:12px;
 
-#kategorier div
-{
-    width: 260px;
-    height: 260px;
-    background-color: red;
 
-}
+ }
+  
+  #billedelink img 
+  {
+    object-fit: cover;
+    transition: filter 0.3s;
+    position: relative;
+    width: 95%;
+  }
+  
+  #billedelink:hover img 
+  {
+    filter: brightness(50%);
+  }
 
-#hovertekst 
-{
-    opacity:0;
-    display: table-cell; /* får den til at opføre sig som en tabel*/
-    vertical-align: middle;
-}
-
-#hovertekst a
-{
-
+  #billedetekst
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
     color: white;
-    font-size: 25px;
+    text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;  
+    font-size: 15px;
 
-}
-
-
-#hovertekst:hover
-{
-    opacity: 1;
-    cursor: pointer;
-    visibility: visible;
-    transition: opacity 0.1s linear;
-    color: white;
-}
-
-#kategorier div:hover
-{   
-    background: rgba(0, 0, 0, 0.5);
-}
+  }
+  
+  #billedelink:hover #billedetekst 
+  {
+    display: block;
+  }
+  
 /*-----------------------------------ANMEDELSER---------------------------------------*/
 
 .anmeldelser
@@ -96,12 +98,13 @@
     background-color: white;
     text-align: center;
     color: #707070;
+    padding-top: 3vh;
 }
 
 
 .anmeldelser h3
 {
-    padding: 20px;
+    padding: 30px;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 27px;
@@ -115,24 +118,30 @@
     font-style: italic;
 }
 
-#boks1
-#boks1 p
-{
-width: 50%;}
-
-
 #boks2
 {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 15%;
+    gap: 10%;
 }
-
 #boks2 p
 {  
     width: 30%;
 }
+
+
+#boks1
+{
+    display: flex;
+    justify-content: center;
+}
+#boks1 p
+{
+    width: 50%;
+}
+
+
 
 
 
