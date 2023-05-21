@@ -1,0 +1,78 @@
+*
+{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 80px;
+}
+
+h1{
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #707070;
+    margin-bottom: 23px;
+}
+
+h2{
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: "georgiapro", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #707070;
+    font-style: italic;
+}
+
+/* Emma og Jonathan underside */
+
+.toboks{
+    display: flex;
+    width: 100%;
+}
+
+.toboks div{
+    flex-direction: column;
+    width: 100%;
+}
+
+.indlednetekst{
+    margin: 4%;
+}
+
+#imgstort{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gallery 
+{
+    column-count: 3;
+    
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+.gallery div {
+    padding: 20px;
+  }
+
+  .gallery div img{
+    width: 100%;
+    height: auto;
+  }

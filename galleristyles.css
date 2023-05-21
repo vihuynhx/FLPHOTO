@@ -10,9 +10,12 @@ body
 {
     padding-top:80px;
 }
-/*--------------MAIN--------------*/
 
-/*----undermenuen på siden----*/
+/*--------------BRYLLUP-GALLERI--------------*/
+
+/*--------------main--------------*/
+
+/*----undermenuen paa siden----*/
 
 .menu{
     margin: 4%;
@@ -42,24 +45,55 @@ body
 
 
 
-.billedkasser #row11
-{
-    height: 505px;
-    background-color: pink;
-}
-
+/*Billedgalleriet*/
 .gallery 
 {
     column-count: 3;
-    column-gap: 20px;
+    
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-.gallery div 
-{
-    break-inside: avoid; 
-}
+
+.gallery img {
+    padding: 20px;
+  }
+
+
+
+  #brylluplink
+  {
+    position: relative;
+
+ }
   
- 
+  
+  #brylluplink:hover img 
+  {
+    filter: brightness(50%);
+  }
+
+  #brylluptekst
+  {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 18pt;
+
+  }
+  
+  #brylluplink:hover #brylluptekst 
+  {
+    display: block;
+
+  }
+  
+
+
+
