@@ -98,9 +98,8 @@
     background-color: white;
     text-align: center;
     color: #707070;
-    padding-top: 6vh;
-    padding-bottom: 2vh;
-
+    padding-top: 7vh;
+    padding-bottom: 3h;
 }
 
 
@@ -136,8 +135,7 @@
     justify-content: center;
     width: 100%;
     gap: 10%;
-    padding-top: 3vh;
-    padding-bottom: 6vh;
+    padding-bottom: 10vh;
 }
 
 #boks2 p
@@ -145,8 +143,101 @@
     width: 30%;
 }
 
+/*-----------------------------------STORT BILLEDE---------------------------------------*/
+
+.stortbillede
+{
+    text-align: center;
+    position: relative;
+}
+
+.stortbillede img
+{    filter:brightness(60%);
+    width: 60%;
 
 
+}
+
+.stortbillede p
+{
+    position: absolute;
+    color: white;
+    font-family: freight-neo-pro, sans-serif;
+    line-height: 1.5;
+    font-style: italic;  
+}
+
+.citater
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    width: 70%;
+}
+
+.citatnavne
+{
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 25px;
+}
+
+/*-----------------------------------OM FLPHOTO---------------------------------------*/
 
 
+.omflphoto
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
 
+.omflphoto div
+{
+    width: 50%;
+}
+
+.omflphoto div img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#ramme
+{
+    border: solid 1px black;
+    height: 451px;
+    margin-left: 10vh;
+    width: 350px;
+    margin-top: -50vh;
+}
+
+#omfilip
+{
+    text-align: center;
+    color: #707070;
+}
+
+#omfilip h1
+{
+    font-family: freight-neo-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+
+#omfilip p
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 2;
+    font-family: "georgiapro", sans-serif;
+    font-size: 12pt;
+    padding-top: 2vh;
+
+}
