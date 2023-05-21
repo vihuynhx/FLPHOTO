@@ -97,17 +97,3 @@ body
 
 
 
-
- HEAD
-
-/* Emma og Jonathan underside */
-
-.toboks{
-    display: flex;
-    background-color: antiquewhite;
-
-}
-
-.toboks div{
-    flex-direction: column;
-}

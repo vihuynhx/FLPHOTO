@@ -71,3 +71,8 @@ p{
 .gallery div {
     padding: 20px;
   }
+
+  .gallery div img{
+    width: 100%;
+    height: auto;
+  }
