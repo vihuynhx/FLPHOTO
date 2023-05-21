@@ -32,7 +32,6 @@ header
     width: 6vw;
     padding-left: 13px;
     justify-content: center;
-
 }
 
 .links
@@ -53,6 +52,11 @@ header
     letter-spacing: 2px;
     font-weight: 500;
     font-style: normal;
+}
+
+.links a:hover
+{
+    color: black;
 }
 
 .fa-facebook
