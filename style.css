@@ -157,7 +157,7 @@
 .stortbillede img
 {    
     filter:brightness(70%);
-    width: 50%;
+    width: 100%;
 }
 
 .stortbillede p
