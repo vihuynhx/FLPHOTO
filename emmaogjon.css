@@ -12,7 +12,6 @@ body{
 
 h1{
     font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
     font-size: 27px;
     color: #707070;
     margin-bottom: 23px;
@@ -52,9 +51,9 @@ p{
 }
 
 #imgstort{
-    width: 100%;
+    width: 50%;
     height: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .gallery 
