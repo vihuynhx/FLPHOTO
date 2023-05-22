@@ -1,5 +1,4 @@
-let image = document.getElementsByClassName('bigimage');
+var image = document.getElementsByClassName('bigimage');
 new simpleParallax(image, {
 	scale: 2
 });
-
