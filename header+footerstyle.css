@@ -80,6 +80,7 @@ header
 
 /*--------------FOOTER--------------*/
 
+/*----footerens-layout-og-størrelse----*/
 footer{
     background-color: #142D52;
     display: flex;
@@ -89,11 +90,13 @@ footer{
     align-items: center;
   }
 
+  /*----diverne-skal-fylde-20%-hver----*/
   footer div{
     width: 20%;
     height: 100%;
   }
 
+/*----layout-på-rubrik----*/
   footer h2{
     margin: auto;
     font-family: freight-neo-pro, sans-serif;  
@@ -105,6 +108,7 @@ footer{
     
   }
 
+  /*----layout-på-brødteksten----*/
   footer div a{
     margin: auto;
       font-family: freight-neo-pro, sans-serif;  
@@ -116,15 +120,15 @@ footer{
       font-weight: 200;
   }
 
-
-  .vertical3
-{
+/*----layout-på-stregen----*/
+  .vertical3{
     border-right: 1px solid white;
     height: 90px;
     display: flex;
     
 }
 
+/*----størrelse-og-placering-af-sociale-medier-ikoner----*/
 footer .fa-facebook
 {
     margin-right: -60px;
@@ -137,6 +141,7 @@ footer .fa-instagram
     font-size: 50px;
 }
 
+/*----4.-og-5.-div-skal-sidde-i-midten----*/
 footer div:nth-child(4), footer div:nth-child(5){
     justify-content: center;
     display: flex;
