@@ -48,7 +48,7 @@
     justify-content: center;
     margin-left: 2vh;
     margin-right: 2vh;
-    padding-bottom: 5vh;
+    padding-bottom: 7vh;
 }
   
   #billedelink
@@ -98,9 +98,8 @@
     background-color: white;
     text-align: center;
     color: #707070;
-    padding-top: 6vh;
-    padding-bottom: 2vh;
-
+    padding-top: 7vh;
+    padding-bottom: 3h;
 }
 
 
@@ -110,6 +109,8 @@
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 27px;
+    padding-top: 4vh;
+
 }
 
 .anmeldelser p
@@ -136,8 +137,7 @@
     justify-content: center;
     width: 100%;
     gap: 10%;
-    padding-top: 3vh;
-    padding-bottom: 6vh;
+    padding-bottom: 10vh;
 }
 
 #boks2 p
@@ -145,8 +145,153 @@
     width: 30%;
 }
 
+/*-----------------------------------STORT BILLEDE---------------------------------------*/
+
+.stortbillede
+{
+    text-align: center;
+    position: relative;
+}
+
+.stortbillede img
+{    filter:brightness(70%);
+
+}
+
+.stortbillede p
+{
+    position: absolute;
+    color: white;
+    font-family: freight-neo-pro, sans-serif;
+    line-height: 1.5;
+    font-style: italic;  
+}
+
+.citater
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    width: 70%;
+}
+
+.citatnavne
+{
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 25px;
+}
+
+/*-----------------------------------OM FLPHOTO---------------------------------------*/
 
 
+.omflphoto
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
 
+.omflphoto div
+{
+    width: 50%;
+}
+
+.omflphoto div img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+#omfilip
+{
+    text-align: center;
+    color: #707070;
+}
+
+#omfilip h1
+{
+    font-family: freight-neo-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+#omfilip p
+{
+    padding-left: 17%;
+    padding-right: 17%;
+    line-height: 2;
+    font-family: "georgiapro", sans-serif;
+    font-size: 16px;
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+
+}
+
+#omfilip a
+{
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #C2D2DF;
+    font-size: 20px;
+    padding: 7px 16px;
+    font-family: freight-neo-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*-----------------------------------INFOGRAPHIC---------------------------------------*/
+
+
+.infographic
+{
+    background-color:#EEE8E1 ;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    text-align: center;
+ 
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.infographic div
+{
+
+    justify-content: space-evenly;
+    padding-left: 2%;
+    padding-right: 2%;
+    color:#707070;
+
+}
+
+.infographic div h1
+{
+    top:0%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 3vh;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1px;
+}
+
+.infographic div p
+{
+    font-family: "georgiapro", sans-serif;
+    padding-top: 3vh;
+    font-size: 15px;
+    line-height: 1.5;
+}
 
 
