@@ -149,6 +149,27 @@ p{
     width: 100%;
 }
 
+.tilfredshedsec h2
+{
+    color: black;
+    text-transform: uppercase;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tilfredshedsec p
+{
+    color: #707070;
+    font-family: "georgiapro", serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 1.7;
+
+}
+
+
 .tilfredshedsec div{
     flex-direction: row;
     width: 25%;

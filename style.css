@@ -230,7 +230,7 @@
     padding-left: 17%;
     padding-right: 17%;
     line-height: 2;
-    font-family: "georgiapro", sans-serif;
+    font-family: "georgiapro", serif;
     font-size: 16px;
     padding-top: 2vh;
     padding-bottom: 8vh;
@@ -290,10 +290,12 @@
 
 .infographic div p
 {
-    font-family: "georgiapro", sans-serif;
     padding-top: 3vh;
+    line-height: 1.7;
+    color: #707070;
+    font-family: "georgiapro", serif;
     font-size: 15px;
-    line-height: 1.5;
+    font-style: normal;
 }
 
 /*-----------------------------------KONTAKTFORMULAR---------------------------------------*/
@@ -313,7 +315,7 @@
 #kontakt_container
 {
     justify-content: center;
-    width: 30%;
+    width: 40%;
 
 }
 #kontaktformular h1
@@ -328,7 +330,7 @@
 #kontaktformular h2
 {
     padding-top: 2vh;
-    font-family: "georgiapro", sans-serif;
+    font-family: "georgiapro", serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: lighter;
@@ -344,6 +346,7 @@
     font-family: freight-neo-pro, sans-serif;
     letter-spacing: 1px;
     font-size: 15px;
+
 }
 
 #udfyldboks, #send_knap
@@ -359,6 +362,9 @@
     padding: 10px ;
     border:none;
     width: 100%;
+    font-size: 14px;
+    font-family: "georgiapro", serif;
+
 }
 
 #selectkategori
@@ -368,6 +374,10 @@
     padding: 10px ;
     border:solid #C2D2DF 1px;
     width: 100%;
+    font-family: "georgiapro", serif;
+    font-size: 14px;
+
+
 }
 
 #beskedindhold
@@ -379,7 +389,9 @@
     border:none;
     width: 100%;
     resize: none;
-    font-family: "georgiapro", sans-serif;
+    font-family: "georgiapro", serif;
+    font-size: 14px;
+
 }
 
 #send_knap

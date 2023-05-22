@@ -119,7 +119,8 @@ body
 }
 
 /*----layout-på-brødteksten----*/
-.prisTekst p{
+.prisTekst p
+{
     font-family: Georgia, serif;  
     font-size: 18px;
     color: #707070;
