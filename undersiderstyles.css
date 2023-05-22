@@ -1,0 +1,76 @@
+*
+{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    padding-top:80px;
+}
+
+/*--------------FEJL-SIDEN--------------*/
+
+.fejlsideTekst h1{
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #707070;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.fejlsideTekst p{
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 22px;
+    color: #707070;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.fejlsideTekst a{
+    text-decoration: underline;
+}
+
+.fejlsideBillede{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/*--------------TAK-SIDEN--------------*/
+
+.taksideTekst h1{
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #707070;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+
+}
+
+.taksideTekst p{
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.taksideTekst a{
+    text-decoration: underline;
+}
+
+.taksideBillede{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
