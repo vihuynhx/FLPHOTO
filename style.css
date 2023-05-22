@@ -78,6 +78,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    
     display: none;
     color: white;
     text-transform: uppercase;
@@ -154,8 +156,9 @@
 }
 
 .stortbillede img
-{    filter:brightness(70%);
-
+{    
+    filter:brightness(70%);
+    width: 50%;
 }
 
 .stortbillede p
