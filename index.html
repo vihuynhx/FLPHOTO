@@ -124,7 +124,7 @@
 
 
             <section class="stortbillede">
-                <img class="bigimage" src="images/forside/emmajon.png" alt="image">
+                <img class="bigimage" src="images/forside/emmajon1.png" alt="image">
                 <p class="citater">
                         “Filip er behagelig at have med ude på shoot. Han gør det meget trygt og sjovt. Han tager nogle virkelig fine billeder!”
                     </p>            
@@ -202,6 +202,54 @@
             <p class="citatnavne"> - Johanne & Henrik - 2022 </p>
           <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     
+    </section>
+        <!-------------------------- KONTAKT FORMULAR -------------------------->
+        <section id="kontaktformular">
+        <div id="kontakt_container" > 
+                <h1>
+                    Tag kontakt
+                </h1>
+
+                <h2>
+                    Jeg er altid klar til at besvare dine spørgsmål og give uforpligtende tilbud, hvis du har en forespørgsel. 
+                    <br>Du er velkommen til at skrive til mig når som helst!</br>
+                </h2>
+
+            <div id="udfyldboks">
+                <label>fulde navn*</label> 
+                <input id="skrivboks" type="text" placeholder="Dit navn..">
+            </div>
+
+            <div id="udfyldboks">
+                <label>e-mail*</label> 
+                <input type="text" id="skrivboks" placeholder="Indtast din e-mail.."></input>
+            </div>
+
+
+        <div id="udfyldboks"> 
+        <label>vælg venligst en kategori*</label>
+        <select id="selectkategori">
+          <option value="bryllup_kategori">Bryllup</option>
+          <option value="Begivenhed">Begivenhed</option>
+          <option value="Portræt">Portræt</option>
+          <option value="Natur/kultur">Natur/kultur</option>
+          <option value="Erhverv">Erhverv</option>
+          <option value="Andet">Andet</option>
+        </select>
+    </div>
+
+    <div id="udfyldboks"> 
+        <label>Besked*</label> 
+        <textarea id="beskedindhold" placeholder="Dine ønsker, planer og ideer..."></textarea> 
+    </div>
+
+    <div id="send_knap">
+<button onclick="validerfelter()">Send</button>
+    </div>
+    
+
+</div>
+
     </section>
 
 
