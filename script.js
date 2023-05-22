@@ -4,7 +4,7 @@ var image = document.getElementsByClassName('bigimage');
 new simpleParallax
 (image, 
 	{
-		scale: 2
+		scale: 1.5
 	}
 );
 
@@ -22,7 +22,7 @@ function validerfelter()
 	}
 	else
 	{
-		window.location.href ="tak.html";							//ellers kommer man ind på tak.html
+		window.location.href = "tak.html";							//ellers kommer man ind på tak.html
 	}
 
 }
