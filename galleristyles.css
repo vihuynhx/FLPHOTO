@@ -52,23 +52,19 @@ body
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
-
+    text-align: center;
 }
 
 
-.gallery img {
+.gallery img 
+  {
     padding: 20px;
   }
 
-
-
-  #brylluplink
+  .bryllupcontainer
   {
     position: relative;
-    text-align: center;
-
- }
-  
+  }
   
   #brylluplink:hover img 
   {
@@ -77,22 +73,23 @@ body
 
   #brylluptekst
   {
+
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    display: none;
-    color: pink;
+    color: white;
     text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;  
     font-size: 18pt;
+
+    display:none;
+
   }
-  
+
   #brylluplink:hover #brylluptekst 
   {
     display: block;
-
   }
   
 
