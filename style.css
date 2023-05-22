@@ -138,7 +138,7 @@
     justify-content: center;
     width: 100%;
     gap: 10%;
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
 }
 
 #boks2 p
@@ -296,4 +296,110 @@
     line-height: 1.5;
 }
 
+/*-----------------------------------KONTAKTFORMULAR---------------------------------------*/
 
+#kontaktformular
+{
+    color: #707070;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+
+
+}
+
+
+#kontakt_container
+{
+    justify-content: center;
+    width: 30%;
+
+}
+#kontaktformular h1
+{
+    text-transform: uppercase;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1px;
+    font-size: 27px;
+    text-align: center;
+}
+
+#kontaktformular h2
+{
+    padding-top: 2vh;
+    font-family: "georgiapro", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+#udfyldboks label
+{
+    line-height: 2;
+    padding-left: 3px;
+    text-transform: uppercase;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#udfyldboks, #send_knap
+{ 
+    padding-top:3vh;
+}
+
+#skrivboks
+{
+    padding-top: 20px;
+    border-radius: 50px;
+    background-color: #C2D2DF;
+    padding: 10px ;
+    border:none;
+    width: 100%;
+}
+
+#selectkategori
+{
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px ;
+    border:solid #C2D2DF 1px;
+    width: 100%;
+}
+
+#beskedindhold
+{
+    border-radius: 20px;
+    background-color: #C2D2DF;
+    height: 20vh;
+    padding: 10px;
+    border:none;
+    width: 100%;
+    resize: none;
+    font-family: "georgiapro", sans-serif;
+}
+
+#send_knap
+{
+    text-align: center;
+
+}
+
+#kontaktformular button
+{
+    text-transform: uppercase;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    background-color: #142d52;
+    color: white;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-weight: bold;
+
+}

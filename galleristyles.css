@@ -61,17 +61,17 @@ body
     padding: 20px;
   }
 
-  .bryllupcontainer
+  .galleryContainer
   {
     position: relative;
   }
   
-  #brylluplink:hover img 
+  #galleryLink:hover img 
   {
     filter: brightness(50%);
   }
 
-  #brylluptekst
+  #galleryTekst
   {
 
     position: absolute;
@@ -81,13 +81,13 @@ body
     color: white;
     text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;  
-    font-size: 18pt;
+    font-size: 16pt;
 
     display:none;
 
   }
 
-  #brylluplink:hover #brylluptekst 
+  #galleryLink:hover #galleryTekst 
   {
     display: block;
   }
