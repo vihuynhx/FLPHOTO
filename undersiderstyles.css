@@ -13,6 +13,7 @@ body
 
 /*--------------FEJL-SIDEN--------------*/
 
+/*----layout-på-overskriften----*/
 .fejlsideTekst h1{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
@@ -23,6 +24,7 @@ body
     font-weight: 600;
 }
 
+/*----layout-på-brødteksten----*/
 .fejlsideTekst p{
     font-family: freight-neo-pro, sans-serif;  
     font-size: 22px;
@@ -32,10 +34,12 @@ body
     font-weight: 500;
 }
 
+/*----underline-af-lniket-"her"----*/
 .fejlsideTekst a{
     text-decoration: underline;
 }
 
+/*----billedets-placering----*/
 .fejlsideBillede{
     display: flex;
     justify-content: center;
@@ -45,6 +49,7 @@ body
 
 /*--------------TAK-SIDEN--------------*/
 
+/*----layout-på-overskriften----*/
 .taksideTekst h1{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
@@ -56,6 +61,7 @@ body
 
 }
 
+/*----layout-på-brødteksten----*/
 .taksideTekst p{
     font-family: freight-neo-pro, sans-serif;  
     font-size: 20px;
@@ -65,13 +71,97 @@ body
     font-weight: 500;
 }
 
+/*----underline-af-lniket-"her"----*/
 .taksideTekst a{
     text-decoration: underline;
 }
 
+/*----billedets-placering----*/
 .taksideBillede{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
+/*--------------PRISER-SIDEN--------------*/
+
+/*----undermenuen paa siden----*/
+
+/*----whitespace----*/
+.prisMenu{
+    margin-top: 4%;
+}
+
+/*----flexbox-af-undermenuen----*/
+.prisMenu div{
+    display: flex;
+}
+
+/*----layout-af-undermenuen----*/
+.prisMenu div a{
+    margin: auto;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #707070;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/*----stregerne-mellem-menupunkterne----*/
+.vertical4
+{
+    border-left: 1px solid #707070;
+    height: 38px;
+    margin-left: -35%;
+    margin-right: -35%;
+}
+
+/*----layout-på-brødteksten----*/
+.prisTekst p{
+    font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+/*----Pakkerne paa siden----*/
+
+/*----flexboxen-af-pakkerne----*/
+.prisPakker{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin: 50px;
+}
+
+/*----placeringen-af-pakkerne----*/
+.prisContainer a {
+    display: flex;
+    justify-content: center;
+    margin: -55px;
+    margin-bottom: 50px;
+    
+    
+}
+
+/*----pakkerne-størrelse----*/
+.prisPakker img {
+    width: 72%;
+  }
+
+/*----hovereffekt-på-pakkerne----*/
+  #prisLink img:hover {
+    transform: scale(1.03);
+    filter: brightness(95%);
+  }
+
+ 
+
+
