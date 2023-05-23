@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="header+footerstyle.css"> <!-- header og footer css -->
     <link rel="stylesheet" href="galleristyles.css"> <!--css-->
     <link rel="stylesheet" href="https://use.typekit.net/akm3tan.css"> <!--adobe font -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationsbibliotek css-->
+    <link rel="stylesheet" href="aos/dist/aos.css" /> <!--Animationsbibliotek css-->
     <script src="script.js" defer></script> <!--javascript-->
     <script src="https://kit.fontawesome.com/ebc2f851ed.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
     <title>FLPHOTO</title>
@@ -54,28 +56,28 @@
 
             <div class="galleryContainer">
                 <a href="#" id="galleryLink">
-                    <img src="images/erhverv/img1.jpg" alt="Billede 1"/>
+                    <img data-aos="zoom-in" data-aos-duration="800" src="images/erhverv/img1.jpg" alt="Billede 1"/>
                     <p id="galleryTekst"> Made to fit</p>
                 </a>
             </div>
 
             <div class="galleryContainer">
                 <a href="#" id="galleryLink">
-                    <img src="images/erhverv/img4.jpg" alt="Billede 4"/>
+                    <img data-aos="zoom-in" data-aos-duration="800" src="images/erhverv/img4.jpg" alt="Billede 4"/>
                     <p id="galleryTekst">Å-festival</p>
                 </a> 
             </div>
 
             <div class="galleryContainer">
                 <a href="#" id="galleryLink">
-                    <img src="images/erhverv/img3.jpg" alt="Billede 3"/>
+                    <img data-aos="zoom-in" data-aos-duration="800" src="images/erhverv/img3.jpg" alt="Billede 3"/>
                     <p id="galleryTekst">Malec Catering</p>
                 </a>   
             </div>
 
             <div class="galleryContainer">
                 <a href="#" id="galleryLink">
-                    <img src="images/erhverv/img2.jpg" alt="Billede 2"/>
+                    <img data-aos="zoom-in" data-aos-duration="800" src="images/erhverv/img2.jpg" alt="Billede 2"/>
                     <p id="galleryTekst">De 4 Årstider</p>
                 </a>
             </div>
@@ -108,6 +110,10 @@
             <a href="#"> <i class="fa-brands fa-instagram" style="color: white;"></i> </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
