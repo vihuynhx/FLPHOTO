@@ -36,6 +36,12 @@ p{
 
 /* Emma og Jonathan underside */
 
+#tilbagepil 
+{
+  width: 10%;
+  padding-bottom: 4%;
+}
+
 .toboks{
     display: flex;
     width: 100%;
