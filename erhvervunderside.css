@@ -130,9 +130,10 @@ p{
 }
 
 .logoer div{
-    height: 80px;
+    height: 70px;
     width: auto;
     flex-direction: row;
+    padding-left: 30px;
 }
 
 .logoer div img{
