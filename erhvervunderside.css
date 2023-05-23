@@ -138,6 +138,8 @@ p{
     height: 80px;
     width: auto;
     flex-direction: row;
+    margin-right: 80px;
+    
 }
 
 .logoer div img{
@@ -145,7 +147,10 @@ p{
 }
 
 
-
+#madeToFit{
+   width: 85%;
+   height: 85%;
+}
 
 
 .tilfredshedsec{
