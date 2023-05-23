@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="erhvervunderside.css"> <!--css-->
     <link rel="stylesheet" href="header+footerstyle.css"> <!-- header og footer css -->
     <link rel="stylesheet" href="https://use.typekit.net/akm3tan.css"> <!--adobe font -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationsbibliotek css-->
+    <link rel="stylesheet" href="aos/dist/aos.css" /> <!--Animationsbibliotek css-->
     <script src="script.js" defer></script><!--javascript-->
     <script src="https://kit.fontawesome.com/ebc2f851ed.js" crossorigin="anonymous"></script>
     <title>FLPHOTO</title>
@@ -158,7 +160,7 @@
 
             <div>
                 <h1>book</h1>
-                <img src="images/book.png" alt="book">
+                <img data-aos="zoom-in" data-aos-duration="800" src="images/book.png" alt="book">
                 <p>
                     Du er velkommen til at skrive en forespørgelse i kontaktformularen, ellers kan du ringe og booke mig. 
                 </p>
@@ -166,28 +168,28 @@
 
             <div>
                 <h1>samtale</h1>
-                <img src="images/samtale.png" alt="book">
+                <img data-aos="zoom-in" data-aos-duration="800" src="images/samtale.png" alt="book">
                 <p>
                     Vi finder en tid sammen til en samtale, så vi kan aftale planen til dit kommende shoot, så du kan nyde dagen.                 </p>
             </div>
 
             <div>
                 <h1>photoshoot</h1>
-                <img src="images/shoot.png" alt="book" >
+                <img data-aos="zoom-in" data-aos-duration="800" src="images/shoot.png" alt="book" >
                 <p>
                     Så er dagen kommet, hvor dit photoshoot finder sted. Jeg guider jer og tager en masse billeder, så i har minderne resten af livet.                </p>
             </div>
 
             <div>
                 <h1>redgigering</h1>
-                <img src="images/redigering.png" alt="book">
+                <img data-aos="zoom-in" data-aos-duration="800" src="images/redigering.png" alt="book">
                 <p>
                     Jeg udvælger de bedste billeder fra shootet, og redigerer dem, så de får det udtryk I ønsker.                 </p>
             </div>
 
             <div>
                 <h1>MODTAG</h1>
-                <img src="images/modtag.png" alt="book">
+                <img data-aos="zoom-in" data-aos-duration="800" src="images/modtag.png" alt="book">
                 <p>
                     I modtager billederne fra photoshootet digitalt inden for 14 dage. Derefter vil i altid have minderne fra dagen foreviget. </p> 
             </div>
@@ -264,22 +266,22 @@
 
 <section class="tilfredshedsec">
     <div>
-        <img src="images/smiley.png" alt="">
+        <img data-aos="zoom-out" data-aos-duration="600" src="images/smiley.png" alt="">
         <h2>Stor kundetilfredshed</h2>
         <p>Jeg har 100% kundetilfredshed. Jeres ønsker er vigtigst for mig og derfor stræber jeg altid efter at opfylde så mange af jeres ønsker som muligt.  </p>
     </div>
     <div>
-        <img src="images/pensel.png" alt="">
+        <img data-aos="zoom-out" data-aos-duration="600" src="images/pensel.png" alt="">
         <h2>Redigering inkluderet</h2>
         <p>I modtager altid jeres billeder efter jeres behov. Jeg går altid efter at afspejle stemningen og redigere derudfra. Har I nogle specifikke ønsker, opfylder jeg selvfølgelig dem. </p>
     </div>
     <div>
-        <img src="images/pile.png" alt="">
+        <img data-aos="zoom-out" data-aos-duration="600" src="images/pile.png" alt="">
         <h2>God kommunikation</h2>
         <p>Kommunikation mellem mine kunder og jeg er allervigtigst for mig. Vi vil fra dag 1 have løbende samtaler, så alle er enige og parate til shootet.</p>
     </div>
     <div>
-        <img src="images/bil.png" alt="">
+        <img data-aos="zoom-out" data-aos-duration="600" src="images/bil.png" alt="">
         <h2>Hele Danmark</h2>
         <p>Jeg er bosiddende i Aarhus, men kører mere end gerne ud til dig. Hvor som helst i hele Danmark. </p>
     </div>
@@ -311,6 +313,9 @@
                 <a href="#"> <i class="fa-brands fa-instagram" style="color: white;"></i> </a>
             </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
