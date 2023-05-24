@@ -25,6 +25,7 @@ body
 /*----flexboxen-af-undermenuen----*/
 .menu div{
     display: flex;
+    flex-direction: row;
 }
 
 /*----layout-af-undermenuens-ord----*/
@@ -36,6 +37,7 @@ body
     color: #707070;
     letter-spacing: 1px;
     font-weight: 400;
+    flex-direction: row;
 }
 
 /*----layout-af-stregerne-mellem-undermenupunkterne----*/
@@ -114,5 +116,14 @@ body
     flex: 100%;
     max-width: 100%;
   }
+  
+  #mobilVæk{
+    display: none;
+  }
+
+ .menu div{
+  min-width: 60%;
+ }
+  
 }
 
