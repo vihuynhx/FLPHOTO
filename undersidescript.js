@@ -38,4 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
-
