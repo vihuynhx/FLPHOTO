@@ -1,20 +1,17 @@
+
+
 // STORT BILLEDE -- kode taget fra hjemmesiden: (https://simpleparallax.com/)
 
-var image = document.getElementsByClassName('bigimage');
-new simpleParallax
-(image, 
-	{
-		scale: 1.5
-	}
-);
+let image = document.getElementsByClassName('bigImage');
+new simpleParallax(image);
 
 //SEND KNAP ALERT
 function validerfelter()
 {
-	let navn = document.getElementById("skrivboks").value; 
-	let email = document.getElementById("skrivboks").value;
-	let besked = document.getElementById("beskedindhold").value;
-	let kategori = document.getElementById("selectkategori").value;
+	let navn = document.getElementById("skrivBoks").value; 
+	let email = document.getElementById("skrivBoks").value;
+	let besked = document.getElementById("beskedIndhold").value;
+	let kategori = document.getElementById("selectKategori").value;
 
 	if(navn  == "" || email  == "" || besked  == ""|| kategori  == "" ) //hvis navn,mail,besked,kategori = intet input
 	{
@@ -26,5 +23,4 @@ function validerfelter()
 	}
 
 }
-
 
