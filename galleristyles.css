@@ -25,6 +25,7 @@ body
 /*----flexboxen-af-undermenuen----*/
 .menu div{
     display: flex;
+    flex-direction: row;
 }
 
 /*----layout-af-undermenuens-ord----*/
@@ -36,6 +37,7 @@ body
     color: #707070;
     letter-spacing: 1px;
     font-weight: 400;
+    flex-direction: row;
 }
 
 /*----layout-af-stregerne-mellem-undermenupunkterne----*/
@@ -52,17 +54,14 @@ body
 
 /*----layout-og-placering-af-galleriet----*/
 .gallery {
-    column-count: 3;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
 }
 
 /*----whitespace-mellem-billederne-i-galleriet----*/
-.gallery img {
-    padding: 20px;
-  }
+
 
 /*----containeren-skal-forholde-sig-til-andre-elementer----*/
   .galleryContainer{
@@ -85,7 +84,7 @@ body
     text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;  
     font-size: 16pt;
-
+    text-align: center;
     display:none;
 
   }
@@ -95,6 +94,36 @@ body
     display: block;
   }
   
+/*----laver-3-lige-store-kolonner-som-sidder-ved-siden-af-hinanden----*/
+.column {
+
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px;
+}
 
 
+/*---Responsive layout til telefon - så alle billederne kommmer på en række ned----*/
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  #mobilVæk{
+    display: none;
+  }
+
+ .menu div{
+  min-width: 60%;
+ }
+  
+}
 

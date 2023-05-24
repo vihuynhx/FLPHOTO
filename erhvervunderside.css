@@ -7,6 +7,13 @@ body{
     margin-top: 100px;
 }
 
+#kontaktContainer 
+{
+    justify-content: center;
+    width: 80% !important;
+}
+
+
 h1{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
@@ -193,3 +200,5 @@ p{
     height: auto;
     padding-bottom: 3%;
 }
+
+

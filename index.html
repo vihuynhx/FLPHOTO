@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!--css-->
-    <link rel="stylesheet" href="erhvervunderside.css"> <!--css-->
     <link rel="stylesheet" href="header+footerstyle.css"> <!-- header og footer css -->
     <link rel="stylesheet" href="https://use.typekit.net/akm3tan.css"> <!--adobe font -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animationsbibliotek css-->
@@ -39,11 +38,12 @@
     </header>
 
 
+
     <!-------------------------- MAIN -------------------------->    
     <main>
 
         <!-------------------------- VIDEO -------------------------->
-        <section class="introvideo">
+        <section class="introVideo">
         <video autoplay muted loop>
             <source src="images/videointrofl.mp4" type="video/mp4">
           </video>
@@ -58,29 +58,29 @@
         </h2>
 
         <div class="kategori">
-            <a href="bryllup.html" id="billedelink">
+            <a href="bryllup.html" id="billedeLink">
                 <img src="images/forside/bryllup.png" alt="Billede 1"/>
-                <p id="billedetekst">bryllup</p>
+                <p id="billedeTekst">bryllup</p>
               </a>
     
-            <a href="begivenheder.html" id="billedelink">
+            <a href="begivenheder.html" id="billedeLink">
                 <img src="images/forside/begivenhed.png" alt="Billede 2" />
-                <span id="billedetekst">begivenheder</span>
+                <span id="billedeTekst">begivenheder</span>
               </a>
     
-            <a href="erhverv.html" id="billedelink">
+            <a href="erhverv.html" id="billedeLink">
                 <img src="images/forside/erhverv.png" alt="Billede 3" />
-                <span id="billedetekst">erhverv</span>
+                <span id="billedeTekst">erhverv</span>
               </a>
     
-            <a href="portrat.html" id="billedelink">
+            <a href="portrat.html" id="billedeLink">
                 <img src="images/forside/portræt.jpg.png" alt="Billede 4" />
-                <span id="billedetekst">portræt</span>
+                <span id="billedeTekst">portræt</span>
               </a>
     
-            <a href="natur.html" id="billedelink">
+            <a href="natur.html" id="billedeLink">
               <img src="images/forside/natur-kultur.png" alt="Billede 5" />
-              <span id="billedetekst">natur/kultur</span>
+              <span id="billedeTekst">natur/kultur</span>
             </a>
     
         </div>
@@ -126,12 +126,12 @@
         <!-------------------------- STORT BILLEDE -------------------------->
 
 
-            <section class="stortbillede">
-                <img class="bigimage" src="images/forside/emmajon1.png" alt="image">
-                <p class="citater">
+            <section class="stortBillede">
+                <img class="bigImage" src="images/forside/emmajon1.png" alt="image">
+                    <p class="citater">
                         “Filip er behagelig at have med ude på shoot. Han gør det meget trygt og sjovt. Han tager nogle virkelig fine billeder!”
                     </p>            
-                    <p class="citatnavne"> -Emma og Jonathan - 2022</p>
+                    <p class="citatNavne"> -Emma og Jonathan - 2022</p>
                   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
             
             </section> 
@@ -197,17 +197,17 @@
 
         <!-------------------------- STORT BILLEDE -------------------------->
 
-        <section class="stortbillede">
-            <img class="bigimage" src="images/forside/1234.png" alt="image" width="80%" >
+        <section class="stortBillede">
+            <img class="bigImage" src="images/forside/begivenheden-2.jpg" alt="Mand og børn">
             <p class="citater">
                 Filip forevigede en fantastisk dag. Hans kompetencer og personlighed går op i en højere enhed! Vi var så taknemmelige for, at Filip ville tage billeder til vores fest!
-                   </p>            
-            <p class="citatnavne"> - Johanne & Henrik - 2022 </p>
+            </p>            
+            <p class="citatNavne"> - Johanne & Henrik - 2022 </p>
           <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     </section>
         <!-------------------------- KONTAKT FORMULAR -------------------------->
-        <section id="kontaktformular">
-        <div id="kontakt_container" > 
+        <section id="kontaktFormular">
+        <div id="kontaktContainer" > 
                 <h1>
                     Tag kontakt
                 </h1>
@@ -217,22 +217,22 @@
                     <br>Du er velkommen til at skrive til mig når som helst!</br>
                 </h2>
 
-            <div id="udfyldboks">
+            <div id="udfyldBoks">
                 <label>fulde navn*</label> 
-                <input id="skrivboks" type="text" placeholder="Dit navn..">
+                <input id="skrivBoks" type="text" placeholder="Dit navn..">
             </div>
 
-            <div id="udfyldboks">
+            <div id="udfyldBoks">
                 <label>e-mail*</label> 
-                <input type="text" id="skrivboks" placeholder="Indtast din e-mail.."></input>
+                <input type="text" id="skrivBoks" placeholder="Indtast din e-mail.."></input>
             </div>
 
 
-        <div id="udfyldboks"> 
+        <div id="udfyldBoks"> 
         <label>vælg venligst en kategori*</label>
-        <select id="selectkategori">
+        <select id="selectKategori">
           <option disabled selected value> -- </option>
-          <option value="bryllup_kategori">Bryllup</option>
+          <option value="Bryllup">Bryllup</option>
           <option value="Begivenhed">Begivenhed</option>
           <option value="Portræt">Portræt</option>
           <option value="Natur/kultur">Natur/kultur</option>
@@ -241,12 +241,12 @@
         </select>
     </div>
 
-    <div id="udfyldboks"> 
+    <div id="udfyldBoks"> 
         <label>Besked*</label> 
-        <textarea id="beskedindhold" placeholder="Dine ønsker, planer og ideer..."></textarea> 
+        <textarea id="beskedIndhold" placeholder="Dine ønsker, planer og ideer..."></textarea> 
     </div>
 
-    <div id="send_knap">
+    <div id="sendKnap">
 <button onclick="validerfelter()">Send</button>
     </div>
 </div>
@@ -254,11 +254,11 @@
     </section>
         <!-------------------------- STORT BILLEDE -------------------------->
 
-    <section class="stortbillede">
-        <img class="bigimage" src="images/forside/kirke.png" alt="image" width="80%" >
+    <section class="stortBillede">
+        <img class="bigImage" src="images/forside/kirke.png" alt="Kirke">
         <p class="citater">
-"Han er god til at fange en stemning, som skinner igennem hans billeder. Samtidig er han meget detaljeorienteret, super dygtig og nem at arbejde sammen med. Stor anbefaling herfra"               </p>            
-        <p class="citatnavne"> - Laura og Simon - 2023 </p>
+            "Han er god til at fange en stemning, som skinner igennem hans billeder. Samtidig er han meget detaljeorienteret, super dygtig og nem at arbejde sammen med. Stor anbefaling herfra"               </p>            
+        <p class="citatNavne"> - Laura og Simon - 2023 </p>
       <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 </section>
 
