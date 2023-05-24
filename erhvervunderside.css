@@ -2,7 +2,7 @@
 
 
 body{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #kontaktContainer 
@@ -78,8 +78,6 @@ p{
     width: 50%;
     display: flex;
     justify-content: end;
-
-  
   }
   
   #nat
