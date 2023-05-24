@@ -26,22 +26,25 @@ p{
 
 /* Emma og Jonathan underside */
 
+
+.toboks{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+}
+
 #tilbagepil 
 {
   width: 10%;
   padding-bottom: 4%;
 }
 
-.toboks{
-    display: flex;
-    width: 100%;
-}
 .indlednetekst
 {
     width: 50%;
     margin: 2%;
     padding: 5% 8% 5% 5%;
-
 }
 
 #imgstort 
@@ -52,6 +55,21 @@ p{
 #imgstort img{
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .toboks{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .toboks div{
+    width: 100%;
+  }
+
+  #imgstort{
+    width: 100%;
+    padding: 4%;
+  }
 }
 
 .gallery 
