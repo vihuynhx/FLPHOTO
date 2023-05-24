@@ -1,3 +1,5 @@
+
+
 // STORT BILLEDE -- kode taget fra hjemmesiden: (https://simpleparallax.com/)
 
 var image = document.getElementsByClassName('bigimage');
@@ -26,5 +28,4 @@ function validerfelter()
 	}
 
 }
-
 
