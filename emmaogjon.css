@@ -49,17 +49,18 @@ p{
 .indlednetekst
 {
     width: 50%;
-}
-
-
-.indlednetekst
-{
     margin: 4%;
+
 }
 
 #imgstort 
 {
     width: 50%;
+}
+
+#imgstort img{
+  width: 100%;
+  height: auto;
 }
 
 .gallery 
@@ -69,8 +70,6 @@ p{
   padding: 0 4px;
   justify-content: center;
 }
-
-
 
   .gallery div img
 {
