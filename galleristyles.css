@@ -25,19 +25,22 @@ body
 /*----flexboxen-af-undermenuen----*/
 .menu div{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    
+   
 }
 
 /*----layout-af-undermenuens-ord----*/
 .menu div a{
     margin: auto;
+    padding: 0 6vw 0 6vw;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
     color: #707070;
     letter-spacing: 1px;
     font-weight: 400;
-    flex-direction: row;
+    
 }
 
 /*----layout-af-stregerne-mellem-undermenupunkterne----*/
@@ -110,20 +113,26 @@ body
 }
 
 
+
 /*---Responsive layout til telefon - så alle billederne kommmer på en række ned----*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-  
-  #mobilVæk{
+
+  .menu div{
+    flex-wrap: wrap;
+    margin: 2px;
+    
+  }
+
+  #vækMobil{
     display: none;
   }
 
- .menu div{
-  min-width: 60%;
- }
-  
+  .vertical2{
+    height: 30px;
+  }
 }
 
