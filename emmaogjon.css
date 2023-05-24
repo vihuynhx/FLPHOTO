@@ -17,21 +17,11 @@ h1{
     margin-bottom: 23px;
 }
 
-h2{
-    font-family: freight-neo-pro, sans-serif;  
-    font-size: 20px;
-    color: #707070;
-    font-weight: 500;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
 p{
-    font-family: "georgiapro", sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 2;
     color: #707070;
-    font-style: italic;
 }
 
 /* Emma og Jonathan underside */
@@ -49,7 +39,7 @@ p{
 .indlednetekst
 {
     width: 50%;
-    margin: 4%;
+    padding: 5% 8% 5% 5%;
 
 }
 
