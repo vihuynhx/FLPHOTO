@@ -64,18 +64,13 @@ p{
 
 .gallery 
 {
-    column-count: 3;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
 }
 
 
-.gallery div 
-{
-    padding: 20px;
-}
 
   .gallery div img
 {
@@ -85,7 +80,7 @@ p{
 
 }
 
-/*------------------------FULDSKÆRM-------------------*/
+/*------------------------FULDSKÆRM af et billede-------------------*/
 #fuldsskaerm 
 {
     display: none;
@@ -131,13 +126,11 @@ p{
   .pil.venstre
   {
     left: 10px;
-    padding-bottom: 2px;
   }
 
   .pil.hojre
   {
     right: 10px;
-    padding-bottom: 2px;
   }
 
 
@@ -152,3 +145,28 @@ p{
   z-index: 1;
   font-size: 30px;
 }
+
+/*----laver-3-lige-store-kolonner-som-sidder-ved-siden-af-hinanden----*/
+.column {
+
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/*---Responsive layout til telefon - så alle billederne kommmer på en række ned----*/
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
