@@ -162,6 +162,23 @@ body
     filter: brightness(95%);
   }
 
+
+/*---Responsive layout til telefon----*/
+@media screen and (max-width: 800px) {
+   
+  
+    .prisMenu div{
+      flex-wrap: wrap;
+      margin: 2px;
+      
+    }
+  
+    .vertical2{
+      height: 30px;
+    }
+  }
+  
+
   /*--------------OMFLPHOTO-SIDEN--------------*/
 
 /*----fleboxen-øverst-på-siden----*/
