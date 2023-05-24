@@ -320,12 +320,12 @@
 }
 
 
-#kontakt_container
+#kontakt_container 
 {
     justify-content: center;
     width: 40%;
-
 }
+
 #kontaktformular h1
 {
     text-transform: uppercase;
