@@ -19,21 +19,20 @@ body
 
 /*----whitespace----*/
 .menu{
-    margin: 4%;
+    padding: 5%;
 }
 
 /*----flexboxen-af-undermenuen----*/
 .menu div{
     display: flex;
     justify-content: center;
-    
-   
 }
+
 
 /*----layout-af-undermenuens-ord----*/
 .menu div a{
     margin: auto;
-    padding: 0 6vw 0 6vw;
+    padding: 0 3vw 0 3vw;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
@@ -47,8 +46,6 @@ body
 .vertical2{
     border-left: 1px solid #707070;
     height: 38px;
-    margin-left: -25%;
-    margin-right: -25%;
 }
 
 
@@ -112,27 +109,104 @@ body
   padding: 20px;
 }
 
+/*------------RESPONSIVE-------------*/
+
+/*---mobiltekst skal fjernes på computer-----*/
+@media screen and (min-width: 1023px) {
+#mobilTekst{
+  display: none;
+}
+}
 
 
-/*---Responsive layout til telefon - så alle billederne kommmer på en række ned----*/
+/*---RESPONSIVE LAYOUT TIL TELEFON-------*/
 @media screen and (max-width: 830px) {
+
+  /*----billederne skal komme under hinanden, i stedet for ved siden af hinanden---*/
   .column {
     flex: 100%;
     max-width: 100%;
   }
 
+  /*---undermenuen skal komme ned på to linjer, når man ser det på telefonen---*/
   .menu div{
     flex-wrap: wrap;
     margin: 2px;
     
   }
 
-  #vækMobil{
-    display: none;
-  }
-
+/*-----linjen mellem undermenupunkterne skal være kortere på telefonen------*/
   .vertical2{
     height: 30px;
   }
+
+  /*---teksten ovenpå billeder skal være væk på mobilen---*/
+  #galleryTekst{
+    color: transparent;
+    
+  }
+
+  /*----hovereffekten skal fjernes på telefon----*/
+  #galleryLink:hover img {
+    filter: brightness(100%);
+  }
+
+  /*---whitespace og billederne skal sidde i midten----*/
+  #galleryLink img{
+    
+    padding-left: 50px;
+    padding-right: 50px;
+   
+    justify-content: center;
+    align-items: center;
+
+  }
+
+/*---tekstens layout på telefon og teksten skal sidde under billederne*/
+#mobilTekst{
+  justify-content: center;
+  color: #707070;
+  text-transform: uppercase;
+  font-family: freight-neo-pro, sans-serif;  
+  font-size: 16pt;
+  text-align: center;
+  padding-bottom: 15px;
+
 }
 
+}
+
+/*---stregen mellem begivenheder og natur/kultur skal væk, når undermenuen er på to linjer på telefonen----*/
+@media screen and (max-width: 548px) {
+#mobilVæk{
+    display: none;
+  }
+}
+
+/*IPAD RESPONSIVE*/
+@media only screen and (min-width: 651px) and (max-width: 1023px ) 
+{
+
+  /*----teksten ovenpå billederne skal væk på telefonen---*/
+#galleryTekst{
+  color: transparent;
+  
+}
+
+/*---hovereffekten på billederne skal væk på telefon----*/
+#galleryLink:hover img {
+  filter: brightness(100%);
+}
+
+/*---tekstens layout og placering----*/
+#mobilTekst{
+justify-content: center;
+  color: #707070;
+  text-transform: uppercase;
+  font-family: freight-neo-pro, sans-serif;  
+  font-size: 16pt;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+}

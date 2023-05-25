@@ -42,7 +42,7 @@ p{
 
 
 
-
+/*----------------------------------- LODRET SLIDESHOW ---------------------------------------*/
 
 .carousel-container {
     position: relative;
@@ -73,14 +73,14 @@ p{
     padding-bottom: 10px;
   }
   
-  #hej
+  #verticalSlideshow
   {
     width: 50%;
     display: flex;
     justify-content: end;
   }
   
-  #nat
+  #knapper
   {
     padding-right: 20px;
     align-self: center;
@@ -90,7 +90,7 @@ p{
   }
 
 
-  #nat button
+  #knapper button
   {
     font-size: 40px;
     color: #bbb;
@@ -106,7 +106,7 @@ p{
 
 
 
-
+/*----------------------------------- SAMARBEJDE ---------------------------------------*/
 
   
 .samarbejde{
@@ -181,4 +181,103 @@ p{
     height: auto;
     padding-bottom: 3%;
 }
+
+
+/*---RESPONSIVE LAYOUT TIL COMPUTER-------*/
+@media screen and (min-width: 830px) {
+.slideshow-container{
+    display: none;
+}
+}
+
+/*---RESPONSIVE LAYOUT TIL TELEFON-------*/
+@media screen and (max-width: 830px) {
+#verticalSlideshow{
+    display: none;
+}
+
+.erhvervtekst{
+    margin: auto;
+    width: 80%;
+}
+
+ /* Slideshow container */
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+  }
+
+  /*---billedernes placering---*/
+  .slideshow-container img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    padding-bottom: 100px;
+  }
+  
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+
+  /*----placeringen af dots----*/
+  .dotPlace{
+    margin-top: -80px;
+    margin-bottom: 50px;
+  }
+  
+  /*---prikkerne viser hvilken side du er indenpå----*/
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+  .logoer{
+    flex-wrap: wrap;
+  }
+
+  .logoer div{
+    margin-bottom: 20px;
+  }
+
+  #festival{
+    width: 130%;
+    height: 130%;
+  }
+
+  .samarbejde{
+    padding: 40px;
+  }
+ 
+  }
+
+
 
