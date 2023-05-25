@@ -594,14 +594,27 @@
 
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     #kontaktContainer{
-        width: 100%;
+        width: 60%;
+        margin: auto;
     }
 
     #kontaktFormular{
-        
+        width: 100%;
+        margin: auto;
     }
 }
 
+@media only screen and (max-width: 650px){
+    #kontaktContainer{
+        width: 60%;
+        margin: auto;
+    }
+
+    #kontaktFormular{
+        width: 100%;
+        margin: auto;
+    }
+}
 
 /*----------------------------------- IKON SERIE ---------------------------------------*/
 
