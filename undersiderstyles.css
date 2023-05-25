@@ -98,6 +98,8 @@ body
     margin: auto;
 }
 
+}
+
 
 /*--------------PRISER-SIDEN--------------*/
 
@@ -265,9 +267,8 @@ body
     to {opacity: 1}
   }
   
- 
   }
-}
+
   
 
   /*--------------OMFLPHOTO-SIDEN--------------*/
@@ -411,4 +412,5 @@ body
 .fl #kontaktformular{
     margin-bottom: 40px;
     margin-top: 40px;
+}
 }
