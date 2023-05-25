@@ -85,13 +85,27 @@ body
     margin-bottom: 40px;
 }
 
+/*RESPONSIVE TIL IPAD OG TELEFON*/
+@media screen and (max-width: 1023px) {
+
+/*---mere whitespace----*/
+    .taksideTekst h1{
+        padding: 20px;
+    }
+
+.taksideBillede img{
+    width: 70%;
+    margin: auto;
+}
+
+
 /*--------------PRISER-SIDEN--------------*/
 
 /*----undermenuen paa siden----*/
 
 /*----whitespace----*/
 .prisMenu{
-    margin-top: 4%;
+    padding-top: 4%;
 }
 
 /*----flexbox-af-undermenuen----*/
@@ -175,24 +189,24 @@ body
 
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
 @media screen and (max-width: 800px) {
-   
-    .mySlides {display: none}
-    img {vertical-align: middle;}
     
+    /*---whitespace mellem undermenupunkterne---*/
     .prisMenu div{
       flex-wrap: wrap;
       margin: 2px;
       
     }
-
+/*--linjen mellem undermenupunkterne skal være kortere på telefon----*/
     .vertical2{
       height: 30px;
     }
 
+    /*----billederne skal ikke alle sammen vises på samme tid på telefon----*/
     .prisPakker{
         display: none;
     }
 
+    /*---hovereffekten skal forsvinde på telefon----*/
     #prisLink img:hover {
        
         transform: none;
@@ -205,6 +219,7 @@ body
     position: relative;
   }
 
+  /*---billedernes placering---*/
   .slideshow-container img{
     display: flex;
     justify-content: center;
@@ -214,27 +229,6 @@ body
   }
   
   
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
@@ -255,6 +249,7 @@ body
     
   }
   
+  /*---prikkerne viser hvilken side du er indenpå----*/
   .active, .dot:hover {
     background-color: #717171;
   }
