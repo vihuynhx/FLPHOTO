@@ -8,8 +8,11 @@
 
 body
 {
-    padding-top:80px;
+    margin-top: 80px;
+    
 }
+
+
 
 /*--------------FEJL-SIDEN--------------*/
 
@@ -84,13 +87,29 @@ body
     margin-bottom: 40px;
 }
 
+/*RESPONSIVE TIL IPAD OG TELEFON*/
+@media screen and (max-width: 1023px) {
+
+/*---mere whitespace----*/
+    .taksideTekst h1{
+        padding: 20px;
+    }
+
+.taksideBillede img{
+    width: 70%;
+    margin: auto;
+}
+
+}
+
+
 /*--------------PRISER-SIDEN--------------*/
 
 /*----undermenuen paa siden----*/
 
 /*----whitespace----*/
 .prisMenu{
-    margin-top: 4%;
+    padding-top: 4%;
 }
 
 /*----flexbox-af-undermenuen----*/
@@ -125,8 +144,7 @@ body
     font-size: 18px;
     color: #707070;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin: 40px 50px 80px 40px;
     line-height: 1.8;
 }
 
@@ -136,9 +154,11 @@ body
 /*----flexboxen-af-pakkerne----*/
 .prisPakker{
     display: flex;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 50px;
     margin: 50px;
+    flex-direction: row;
 }
 
 /*----placeringen-af-pakkerne----*/
@@ -162,21 +182,95 @@ body
     filter: brightness(95%);
   }
 
+/*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
+@media screen and (min-width: 800px) {
+    .slideshow-container{
+        display: none;
+    }
+}
 
-/*---Responsive layout til telefon----*/
+
+
+/*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
 @media screen and (max-width: 800px) {
-   
-  
+    
+    /*---whitespace mellem undermenupunkterne---*/
     .prisMenu div{
       flex-wrap: wrap;
       margin: 2px;
       
     }
-  
+/*--linjen mellem undermenupunkterne skal være kortere på telefon----*/
     .vertical2{
       height: 30px;
     }
+
+    /*----billederne skal ikke alle sammen vises på samme tid på telefon----*/
+    .prisPakker{
+        display: none;
+    }
+
+    /*---hovereffekten skal forsvinde på telefon----*/
+    #prisLink img:hover {
+       
+        transform: none;
+        filter: brightness(100%);
+      }
+
+    /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
   }
+
+  /*---billedernes placering---*/
+  .slideshow-container img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    padding-bottom: 100px;
+  }
+  
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  
+  /*---prikkerne viser hvilken side du er indenpå----*/
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  }
+
   
 
   /*--------------OMFLPHOTO-SIDEN--------------*/
@@ -321,4 +415,4 @@ body
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
+}

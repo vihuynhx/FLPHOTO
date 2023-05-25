@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var carouselContainer = document.querySelector('.carousel-container');
-  var carouselItems = document.querySelector('.carousel-items');
-  var carouselUp = document.querySelector('.carousel-up');
-  var carouselDown = document.querySelector('.carousel-down');
-  var itemHeight = carouselContainer.offsetHeight / 3; // Opdateret højde for 3 synlige billeder
-  var currentIndex = 0;
+  let carouselContainer = document.querySelector('.carousel-container');
+  let carouselItems = document.querySelector('.carousel-items');
+  let carouselUp = document.querySelector('.carousel-up');
+  let carouselDown = document.querySelector('.carousel-down');
+  let itemHeight = carouselContainer.offsetHeight / 3; // Opdateret højde for 3 synlige billeder
+  let currentIndex = 0;
+
 
   carouselItems.style.transform = 'translateY(0)'; // Startposition for de synlige billeder
 
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function updateCarouselPosition() {
-    var translateYValue = -currentIndex * itemHeight + 'px';
+    let translateYValue = -currentIndex * itemHeight + 'px';
     carouselItems.style.transform = 'translateY(' + translateYValue + ')';
   }
 });

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/*-----------------------------------YDELSER---------------------------------------*/
+/*----------------------------------- YDELSER ---------------------------------------*/
 
 .introVideo video
 {
@@ -21,6 +21,8 @@
     text-align: center;
     top:0;
     background-color: #eee8e1;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .ydelser h1
@@ -48,8 +50,6 @@
     padding-top: 5vh;
     display: flex;
     justify-content: center;
-    margin-left: 2vh;
-    margin-right: 2vh;
     padding-bottom: 7vh;
 }
   
@@ -57,8 +57,6 @@
   {
     position: relative;
     gap:12px;
-
-
  }
   
   #billedeLink img 
@@ -84,7 +82,7 @@
     color: white;
     text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;  
-    font-size: 27px;
+    font-size: 2vw;
     font-style: normal;
     letter-spacing: 1.5px;
   }
@@ -93,30 +91,71 @@
   {
     display: block;
   }
-  
-/*-----------------------------------ANMEDELSER---------------------------------------*/
 
-.anmeldelser
-{
-    background-color: white;
+  .titel{
+    display: none;
+  }
+
+  @media only screen and (min-width: 651px) and (max-width: 1023px){
+    .kategori {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #billedeLink{
+        width: 40%;
+    }
+    #billedeLink img{
+        width: 100%;
+    }
+    .titel{
+        display: flex;
+        justify-content: center;
+       }
+    #billedeLink:hover img{
+        filter: brightness(100%);
+       }
+    #billedeTekst{
+        color: transparent;
+    }
+
+}
+   
+  @media screen and (max-width: 650px){
+    .ydelser{
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+    .kategori{
+        flex-direction: column;
+        gap: 40px;
+    }
+   .titel{
+    display: flex;
+    justify-content: center;
+   }
+   #billedeLink:hover img{
+    filter: brightness(100%);
+   }
+#billedeTekst{
+    color: transparent;
+}
+  }
+  
+/*----------------------------------- ANMEDELSER ---------------------------------------*/
+
+.anmeldelser{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: #707070;
-    padding-top: 20px;
-    padding-bottom: 3h;
+    padding: 5%;
 }
 
-
-.anmeldelser h3
-{
-    padding-bottom: 6vh;
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 27px;
-    padding-top: 4vh;
-    letter-spacing: 1.5px;
+.anmeldelser div{
+    width: 100%;
 }
 
-.anmeldelser p
+.anmeldelser div p
 {
     font-family: Georgia, serif;
     font-size: 16px;
@@ -124,31 +163,119 @@
     font-style: italic;
 }
 
-#boks1
-{
-    display: flex;
-    justify-content: center;
-}
-#boks1 p
-{
-    width: 40%;
+.anmeldelser div h3{
+    padding-bottom: 6vh;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 1.5px;
 }
 
-#boks2
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 10%;
-    padding-bottom: 8vh;
-}
-
-#boks2 p
-{  
+#citat1{
     width: 30%;
+    margin: auto;
 }
 
-/*-----------------------------------STORT BILLEDE---------------------------------------*/
+#boks2{
+    display: flex;
+}
+
+#boks2 div{
+    flex-direction: row;
+    width: 30%;
+    margin:auto;
+}
+
+
+/*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
+@media screen and (min-width: 800px) {
+    .slideshow-container{
+        display: none;
+    }
+}
+
+
+
+/*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
+@media screen and (max-width: 800px) {
+
+    #citat1, #boks2{
+        display: none;
+    }
+   
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    .prisMenu div{
+      flex-wrap: wrap;
+      margin: 2px;
+      
+    }
+
+    .vertical2{
+      height: 30px;
+    }
+
+    .prisPakker{
+        display: none;
+    }
+
+    #prisLink img:hover {
+       
+        transform: none;
+        filter: brightness(100%);
+      }
+
+    /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .slideshow-container img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    padding-bottom: 100px;
+  }
+  
+ 
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dotPlace{
+    text-align: center;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+ 
+  }
+
+/*----------------------------------- STORT BILLEDE ---------------------------------------*/
 
 .stortBillede
 {
@@ -176,19 +303,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
-    width: 70%;
+    font-size: 3.5vw;
+    width: 75%;
 }
 
 .citatNavne
 {
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -30%);
-    font-size: 25px;
+    font-size: 2vw;
 }
 
-/*-----------------------------------OM FLPHOTO---------------------------------------*/
+/*----------------------------------- OM FLPHOTO ---------------------------------------*/
 
 
 .omflphoto
@@ -262,7 +389,35 @@
     font-weight: bold;
 }
 
-/*-----------------------------------INFOGRAPHIC---------------------------------------*/
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    .omflphoto{
+        padding-left: 5% ;
+        padding-right: 5%;
+    }
+    #omfilip p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .omflphoto{
+        flex-direction: column;
+    }
+    .omflphoto div{
+        width: 100%;
+    }
+    #foto{
+        margin-bottom: 30px;
+    }
+    #omfilip p{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/*----------------------------------- INFOGRAPHIC ---------------------------------------*/
 
 
 .infographic
@@ -306,7 +461,26 @@
     font-style: normal;
 }
 
-/*-----------------------------------KONTAKTFORMULAR---------------------------------------*/
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    .infographic{
+        flex-wrap: wrap;
+    }
+    .infographic div{
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .infographic{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
+
+
+/*----------------------------------- KONTAKTFORMULAR ---------------------------------------*/
 
 #kontaktFormular
 {
@@ -418,6 +592,31 @@
     font-weight: bold;
 }
 
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    #kontaktContainer{
+        width: 60%;
+        margin: auto;
+    }
+
+    #kontaktFormular{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #kontaktContainer{
+        width: 60%;
+        margin: auto;
+    }
+
+    #kontaktFormular{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*----------------------------------- IKON SERIE ---------------------------------------*/
 
 .tilfredshedsec{
     padding: 4%;
