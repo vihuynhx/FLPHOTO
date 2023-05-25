@@ -133,6 +133,12 @@
     display: flex;
     justify-content: center;
    }
+   #billedeLink:hover img{
+    filter: brightness(100%);
+   }
+#billedeTekst{
+    color: transparent;
+}
   }
   
 /*----------------------------------- ANMEDELSER ---------------------------------------*/
@@ -248,8 +254,6 @@
   }
 
   .dotPlace{
-    margin-top: -80px;
-    margin-bottom: 50px;
     text-align: center;
   }
   
@@ -457,11 +461,24 @@
     font-style: normal;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (min-width: 651px) and (max-width: 1023px){
     .infographic{
-        display: none;
+        flex-wrap: wrap;
+    }
+    .infographic div{
+        width: 30%;
+        margin: auto;
     }
 }
+
+@media only screen and (max-width: 650px){
+    .infographic{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
+
 
 /*----------------------------------- KONTAKTFORMULAR ---------------------------------------*/
 
@@ -574,6 +591,17 @@
     padding: 12px 25px;
     font-weight: bold;
 }
+
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    #kontaktContainer{
+        width: 100%;
+    }
+
+    #kontaktFormular{
+        
+    }
+}
+
 
 /*----------------------------------- IKON SERIE ---------------------------------------*/
 
