@@ -19,21 +19,19 @@ body
 
 /*----whitespace----*/
 .menu{
-    margin: 4%;
+    padding: 5%;
 }
 
 /*----flexboxen-af-undermenuen----*/
 .menu div{
     display: flex;
     justify-content: center;
-    
-   
 }
 
 /*----layout-af-undermenuens-ord----*/
 .menu div a{
     margin: auto;
-    padding: 0 6vw 0 6vw;
+    padding: 0 3vw 0 3vw;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
@@ -47,8 +45,6 @@ body
 .vertical2{
     border-left: 1px solid #707070;
     height: 38px;
-    margin-left: -25%;
-    margin-right: -25%;
 }
 
 
@@ -113,6 +109,12 @@ body
 }
 
 
+@media screen and (min-width: 1023px) {
+#mobilTekst{
+  display: none;
+}
+}
+
 
 /*---Responsive layout til telefon - så alle billederne kommmer på en række ned----*/
 @media screen and (max-width: 830px) {
@@ -127,12 +129,60 @@ body
     
   }
 
-  #vækMobil{
-    display: none;
-  }
 
   .vertical2{
     height: 30px;
   }
+
+  #galleryTekst{
+    color: transparent;
+    
+  }
+
+  #galleryLink:hover img {
+    filter: brightness(100%);
+  }
+
+
+#mobilTekst{
+  justify-content: center;
+  color: #707070;
+  text-transform: uppercase;
+  font-family: freight-neo-pro, sans-serif;  
+  font-size: 16pt;
+  text-align: center;
+  padding-bottom: 50px;
+
 }
 
+}
+
+@media screen and (max-width: 548px) {
+#mobilVæk{
+    display: none;
+  }
+}
+
+/*IPAD RESPONSIVE*/
+@media only screen and (min-width: 651px) and (max-width: 1023px ) 
+{
+#galleryTekst{
+  color: transparent;
+  
+}
+
+#galleryLink:hover img {
+  filter: brightness(100%);
+}
+
+#mobilTekst{
+justify-content: center;
+  color: #707070;
+  text-transform: uppercase;
+  font-family: freight-neo-pro, sans-serif;  
+  font-size: 16pt;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+}
