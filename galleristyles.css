@@ -26,6 +26,8 @@ body
 .menu div{
     display: flex;
     justify-content: center;
+    
+    
 }
 
 
@@ -39,6 +41,7 @@ body
     color: #707070;
     letter-spacing: 1px;
     font-weight: 400;
+
     
 }
 
@@ -116,6 +119,12 @@ body
 #mobilTekst{
   display: none;
 }
+.menu div a{
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+
 }
 
 
