@@ -118,7 +118,7 @@
         color: transparent;
     }
 
-}
+    }
    
   @media screen and (max-width: 650px){
     .ydelser{
@@ -130,15 +130,15 @@
         gap: 40px;
     }
    .titel{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
    }
    #billedeLink:hover img{
-    filter: brightness(100%);
+        filter: brightness(100%);
    }
-#billedeTekst{
-    color: transparent;
-}
+    #billedeTekst{
+        color: transparent;
+    }
   }
   
 /*----------------------------------- ANMEDELSER ---------------------------------------*/
@@ -594,11 +594,26 @@
 
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     #kontaktContainer{
-        width: 100%;
+        width: 60%;
+        margin: auto;
     }
 
     #kontaktFormular{
-        
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 650px){
+    #kontaktContainer{
+        width: 60%;
+        margin: auto;
+    }
+
+    #kontaktFormular{
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -643,3 +658,29 @@
     height: auto;
     padding-bottom: 3%;
 }
+
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    .tilfredshedsec{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      .tilfredshedsec div{
+        width: 50%;
+      }
+}
+
+  @media only screen and (max-width: 650px){
+    .tilfredshedsec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tilfredshedsec div{
+        width: 80%;
+        text-align: center;
+        margin-top: 5%;
+    }
+  }
+  
