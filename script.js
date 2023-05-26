@@ -1,5 +1,17 @@
 
 
+// Mobil header
+function openNav() {
+  document.getElementById("myNav").style.height = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+
+
+
 // STORT BILLEDE -- SOURCE: (https://simpleparallax.com/)
 let image = document.getElementsByClassName('bigImage');
 new simpleParallax(image);
