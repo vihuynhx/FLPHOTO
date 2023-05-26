@@ -103,13 +103,13 @@ p{
     align-items: center;
   }
 
-  #fuldsskaerm img 
+#fuldsskaerm img 
   {
     max-width: 90%;
     max-height: 90%;
   }
 
-  .pil 
+.pil 
   {
     position: absolute;
     top: 50%;
@@ -124,23 +124,8 @@ p{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    padding-bottom: 2px;
   }
-
-  .pil:hover
-  {
-    filter:brightness(50%);
-  }
-
-  .pil.venstre
-  {
-    left: 10px;
-  }
-
-  .pil.hojre
-  {
-    right: 10px;
-  }
-
 
 .exit 
 {
@@ -152,6 +137,24 @@ p{
   cursor: pointer;
   z-index: 1;
   font-size: 30px;
+}
+
+.pil:hover
+{
+  filter:brightness(50%);
+}
+
+.pil.venstre
+{
+  left: 10px;
+  padding-right: 2px;
+}
+
+.pil.hojre
+{
+  right: 10px;
+  padding-left: 2px;
+
 }
 
 /*----laver-3-lige-store-kolonner-som-sidder-ved-siden-af-hinanden----*/

@@ -36,7 +36,6 @@ function tilbage()
   if (vistPaSkaerm > 0)                 //hvis 'vistPaSkaerm' er størrer end 0 (altså ved 1 eller højere, inde i arrayet)
   {
     vistPaSkaerm --;     //så bliver vistPaSkaerm -1, altså går tilbage
-
     showFullscreen_billeder(vistPaSkaerm);    //kalder funktionen med den gældende skærm
   }
 }
@@ -48,7 +47,6 @@ function frem()
   if (vistPaSkaerm < billeder.length - 1) //hvis 'vistPaSkaerm' er mindre en billedegalleri-arrayet MINUS 1, for at sørge for at vi er inde i arrayet og altid er -1, for at kunne gå frem
   {
     vistPaSkaerm++;                       // så har vistPaSkaerm +1
-
     showFullscreen_billeder(vistPaSkaerm);    //kalder funktionen med den gældende skærm
   }
 }
@@ -69,16 +67,13 @@ function navigerMedTastatur(e)                //  e er en funktionparamenter for
   showFullscreen_billeder(vistPaSkaerm); //kalder den nye 'vistPaSkaerm' ved fuldskærm
 }
 
-// Tilføjer click-event listeners til hvert billede i galleriet
-billeder.forEach((image, index) =>
+
+//for hver image sker der:
+billeder.forEach(function(image, index) //foreach metoden tager i callback-funktionens parameter(images og index) for hver image i den nuværende index 
 {
-	image.addEventListener('click', () => 
+  image.addEventListener('click', function() //tilføljer event-listener for click, når man klikker på image - til tom funktion (ingen parameter)
   {
-	  // Opdaterer currentIndex med det klikkede billedes indeks
-	  vistPaSkaerm = index;
-	  // Viser fuldskærmsbilledet med det nye indeks
-	  showFullscreen_billeder(vistPaSkaerm);
-	}
-  );
+    vistPaSkaerm = index;                   //så bliver vistpåskærm sat lig med index
+    showFullscreen_billeder(vistPaSkaerm);  //og fuldskæmenen bliver kaldt 
   });
-  
+});

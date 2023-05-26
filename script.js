@@ -1,7 +1,6 @@
 
 
-// STORT BILLEDE -- kode taget fra hjemmesiden: (https://simpleparallax.com/)
-
+// STORT BILLEDE -- SOURCE: (https://simpleparallax.com/)
 let image = document.getElementsByClassName('bigImage');
 new simpleParallax(image);
 
