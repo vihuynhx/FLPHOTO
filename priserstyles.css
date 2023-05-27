@@ -125,11 +125,12 @@ body
 #topP
 {
     color: #707070;
+    margin: 2vh 0 2vh 0;
 }
 
-.calculator p, .tjekliste .setup-costs, .tjekliste td, .kilometerAdresse p
+.calculator p, .prisBeregner .tjekListe .setup-costs, .tjekListe td, .kilometerAdresse p
 {
-    font-family: Georgia, serif !important;
+    font-family: Georgia, serif;
     font-size: 16px;
     line-height: 2;
     font-weight: 100;
@@ -143,14 +144,15 @@ body
     letter-spacing: 1;
 }
 
-#pakkeVaelger
+#pakkeVaelger 
 {
     background-color: #EEE8E1;
     border: solid #899DBB 1px;
     width: 50%;
-    height: 30px;
+    border-radius: 25px;
     font-family: Georgia, serif;
     font-size: 14px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -186,6 +188,11 @@ tr:nth-child(5) td
 .kilometerAdresse p:nth-child(2)
 {
     margin-bottom: 2px;
+}
+
+.kilometerAdresse p
+{
+    margin: 1vh 0 1vh 0;
 }
 
 
@@ -250,6 +257,13 @@ hr
 }
 
 
+@media screen and (min-width: 651px) and (max-width: 1023px){
+    .calculator{
+        width: 60%;
+    }
+
+    
+}
 
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
 @media screen and (min-width: 800px) {
