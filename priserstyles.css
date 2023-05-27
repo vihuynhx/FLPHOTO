@@ -9,106 +9,13 @@
 body
 {
     margin-top: 80px;
-    
 }
 
-
-
-/*--------------FEJL-SIDEN--------------*/
-
-/*----layout-på-overskriften----*/
-.fejlsideTekst h1{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 110px;
-    color: #707070;
-    text-align: center;
-    margin-top: 5px;
-    font-weight: 600;
-}
-
-/*----layout-på-brødteksten----*/
-.fejlsideTekst p{
-    font-family: freight-neo-pro, sans-serif;  
-    font-size: 22px;
-    color: #707070;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 500;
-}
-
-/*----underline-af-lniket-"her"----*/
-.fejlsideTekst a{
-    text-decoration: underline;
-}
-
-/*----billedets-placering----*/
-.fejlsideBillede{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-/*--------------TAK-SIDEN--------------*/
-
-/*----layout-på-overskriften----*/
-.taksideTekst h1{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 38px;
-    color: #707070;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 600;
-
-}
-
-/*----layout-på-brødteksten----*/
-.taksideTekst p{
-    font-family: freight-neo-pro, sans-serif;  
-    font-size: 20px;
-    color: #707070;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 500;
-}
-
-/*----underline-af-lniket-"her"----*/
-.taksideTekst a{
-    text-decoration: underline;
-}
-
-/*----billedets-placering----*/
-.taksideBillede{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/*RESPONSIVE TIL IPAD OG TELEFON*/
-@media screen and (max-width: 1023px) {
-
-/*---mere whitespace----*/
-    .taksideTekst h1{
-        padding: 20px;
-    }
-
-.taksideBillede img{
-    width: 70%;
-    margin: auto;
-}
-
-}
-
-
-
-/* --------------PRISER-SIDEN--------------
+/*--------------PRISER-SIDEN--------------*/
 
 /*----undermenuen paa siden----*/
 
-/*----whitespace----*/ 
+/*----whitespace----*/
 .prisMenu{
     padding-top: 4%;
 }
@@ -168,20 +75,18 @@ body
     justify-content: center;
     margin: -55px;
     margin-bottom: 50px;
-    
-    
 }
 
 /*----pakkerne-størrelse----*/
 .prisPakker img {
     width: 72%;
-  }
+}
 
 /*----hovereffekt-på-pakkerne----*/
-  #prisLink img:hover {
+#prisLink img:hover {
     transform: scale(1.03);
     filter: brightness(95%);
-  }
+}
 
 
 
@@ -222,7 +127,7 @@ body
     color: #707070;
 }
 
-.calculator p, .setup-costs, .tjekliste td, .kilometerAdresse p
+.calculator p, .tjekliste .setup-costs, .tjekliste td, .kilometerAdresse p
 {
     font-family: Georgia, serif !important;
     font-size: 16px;
@@ -396,7 +301,6 @@ hr
     padding-bottom: 100px;
   }
   
-
   
  
   
@@ -430,151 +334,3 @@ hr
   }
   
   }
-
-  
-
-  /*--------------OMFLPHOTO-SIDEN--------------*/
-
-/*----fleboxen-øverst-på-siden----*/
-.flphotoSiden{
-    display: flex;
-}
-
-/*----de-to-sektioner-i-flexboxen-skal-fylde-50%-hver----*/
-.flphotoSiden div{
-    width: 50%;
-}
-
-/*----billedets-placering----*/
-.flphotoSiden div img{
-    display: flex;
-    width: 72%;
-    margin: auto;
-    margin-top: 30px;
-}
-
-/*----layout-på-overskriften----*/
-.flphotoSiden h1{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 26px;
-    color: #707070;
-    padding-left: 150px;
-    margin-top: 40px;
-    font-weight: 600;
-    line-height: 1.8;
-
-}
-
-/*----layout-på-rubrik----*/
-.flphotoSiden h2{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #707070;
-    padding-left: 150px;
-    padding-top: 0px;
-    margin-top: 40px;
-    font-weight: 500;
-    line-height: 1.8;
-    
-    
-
-}
-
-/*----layout-på-brødteksten----*/
-.flphotoSiden p{
-    font-family: Georgia, serif;  
-    font-size: 18px;
-    color: #707070;
-    margin-top: 20px;
-    font-weight: 500;
-    padding-left: 150px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 1.8;
-    
-}
-
-/*----some-ikonernes-placering----*/
-.flphotoSiden #soMe{
-    margin-top: 30px;
-    padding-left: 150px;
-}
-
-.flphotoSiden #soMe a{
-    padding-right: 20px;
-    
-}
-
-/*----flexboxen-ved-videoen----*/
-.lærFilip{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.lærFilip div{
-    margin: auto;
-}
-
-/*----layout-på-rubrik----*/
-.lærFilip h2{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #707070;
-    padding-top: 0px;
-    margin-top: 40px;
-    font-weight: 600;
-    line-height: 1.8;
-}
-
-#lærVideo{
-    width: 500px;
-    height: 500px;
-    background-color: pink;
-}
-
-/*----layout-på-sektionen-med-udstyr----*/
-.udstyrSektion{
-    background-color: #EEE8E1;
-    padding-bottom: 50px;
-}
-
-/*----billederne-skal-være-i-en-flexbox----*/
-.udstyr{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 30px;
-    
-}
-
- .udstyr div{
-    width: 300px;
-    height: 250px;
-    background-color: pink;
- }
-
- /*----layout-på-rubrik----*/
- .udstyrSektion h2{
-    font-family: freight-neo-pro, sans-serif;  
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #707070;
-    font-weight: 600;
-    line-height: 1.8;
-    text-align: center;
-    padding-top: 50px;
-}
-
-/*----kontakt-formularens-placering----*/
-.fl #kontaktformular{
-    margin-bottom: 40px;
-    margin-top: 40px;
-
-}
-
-
