@@ -183,7 +183,7 @@ header
 #menu{ /* slideren */
   z-index:1;
   min-width:100%;
-  min-height:70vh;
+  min-height:75vh;
   position: fixed;
   top:0;
   height:0;
@@ -209,7 +209,7 @@ header
   margin-bottom:30px;
   text-decoration:none;
   font-family: freight-neo-pro, sans-serif;  
-  font-size: 25px;
+  font-size: 20px;
   color: #707070;
   font-weight: 500;  
   text-transform: uppercase;
