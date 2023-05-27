@@ -127,6 +127,8 @@ header
   position: relative;
   z-index:2;
 }
+
+/* Burgericon */ 
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
@@ -141,6 +143,8 @@ header
 #burger-menu span:after {
   content: "";
 }
+
+/* Burgermenu */
 #burger-menu span {
   right: 0px;
   top: 13px;
@@ -157,6 +161,7 @@ header
   width: 20px;
 }
 
+/* Kryds */
 #burger-menu.close span {
   transform: rotate(-45deg);
   top: 13px;
@@ -175,10 +180,10 @@ header
   width:0;
 }
 
-#menu{
+#menu{ /* slideren */
   z-index:1;
   min-width:100%;
-  min-height:640px;
+  min-height:70vh;
   position: fixed;
   top:0;
   height:0;
@@ -199,7 +204,7 @@ header
 #menu li{
   list-style:none;
 }
-#menu a{
+#menu a{ /* liste af menupunkterne */
   display:block;
   margin-bottom:30px;
   text-decoration:none;
@@ -208,7 +213,6 @@ header
   color: #707070;
   font-weight: 500;  
   text-transform: uppercase;
-
 }
 
 }  
