@@ -29,7 +29,7 @@ header
 
 #logo a img
 {  
-    width: 6vw;
+    width: 70px;
     padding-left: 13px;
     justify-content: center;
 }
@@ -61,7 +61,6 @@ header
 
 .fa-facebook
 {
-    margin-right: -5px;
     font-size: 30px;
 }
 
@@ -77,11 +76,71 @@ header
     height: 40px;
 }
 
+.mobilheader{
+    display: none;
+}
+
 /*--- Den side du er inde på bliver markeret som menupunkt ---*/
 #nu{
     color: black;
     font-weight: bold;
 }
+
+
+/* header til mobil */
+@media only screen and (max-width: 1023px){
+.mobilheader{
+    display: flex;   
+}
+
+#logo{
+    width: 91%;
+}
+
+.overlay {
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #707070;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}  
+
+
 
 /*-------------- FOOTER --------------*/
 
@@ -99,6 +158,7 @@ footer{
   footer div{
     width: 20%;
     height: 100%;
+    flex-direction: row;
   }
 
 /*---- Layout-på-rubrik ----*/
@@ -150,4 +210,32 @@ footer .fa-instagram
 footer div:nth-child(4), footer div:nth-child(5){
     justify-content: center;
     display: flex;
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1023px){
+    footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    footer div{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .vertical3{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+    footer div{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .vertical3{
+        height: auto;
+    }
 }

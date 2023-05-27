@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -56,6 +57,26 @@ p{
   width: 100%;
   height: auto;
 }
+
+/* Pil der fører tilbage til toppen */
+.tiltop{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.tiltop a img{
+  width: 40px;
+  height: auto;
+}
+
+h2{
+  font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;  
+}
+
 
 @media screen and (max-width: 900px) {
   .toboks{
