@@ -178,7 +178,7 @@ header
 #menu{
   z-index:1;
   min-width:100%;
-  min-height:680px;
+  min-height:640px;
   position: fixed;
   top:0;
   height:0;
