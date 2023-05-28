@@ -7,6 +7,7 @@ burgerMenu.addEventListener('click',function(){
 });
 
 
+// Slideshow
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -40,10 +41,10 @@ function showSlides(n) {
 // Pris-beregner
 
 // Hent referencer til de nødvendige elementer
-const checkboxes = document.getElementsByClassName('setup-costs');
+const checkboxes = document.getElementsByClassName('tilvalg');
 const select = document.getElementById('pakkeVaelger');
 const antalKilometerInput = document.getElementById('antalKilometer');
-const priceElement = document.getElementById('price');
+const prisElement = document.getElementById('livePris');
 
 // Lyt efter ændringer i checkboxe
 for (let i = 0; i < checkboxes.length; i++) {
@@ -80,6 +81,6 @@ function updatePrice() {
   }
 
   // Opdater prisvisningen
-  priceElement.textContent = total.toFixed(2);
+  prisElement.textContent = total.toFixed(2);
 }
 

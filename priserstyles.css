@@ -128,7 +128,7 @@ body
     margin: 2vh 0 2vh 0;
 }
 
-.calculator p, .prisBeregner .tjekListe .setup-costs, .tjekListe td, .kilometerAdresse p
+.calculator p, .prisBeregner .tjekListe .tilvalg, .tjekListe td, .kilometerAdresse p
 {
     font-family: Georgia, serif;
     font-size: 16px;
@@ -240,7 +240,7 @@ hr
     margin: 3vh 0 3vh 0;
 }
 
-.priceBox h2, .priceBox #price
+.prisBox h2, .prisBox #livePris
 {
     text-transform: uppercase;
     font-family: Georgia, serif;
@@ -250,7 +250,7 @@ hr
     margin-bottom: 3vh;
 }
 
-.priceBox #price
+.prisBox #livePris
 {
     padding-left: 8vw;
     border-bottom: solid #707070 1px;
