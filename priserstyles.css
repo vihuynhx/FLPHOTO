@@ -262,7 +262,29 @@ hr
         width: 60%;
     }
 
+    .kilometerLabel{
+        left: 24vw;
+    }
+
     
+}
+
+@media screen and (max-width: 650px){
+    .calculator{
+        width: 70%;
+    }
+
+    #pakkeVaelger{
+        width: 100%;
+    }
+
+    .kilometer{
+        width: 100%;
+    }
+
+    .kilometerLabel{
+        left: 58vw;
+    }
 }
 
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
