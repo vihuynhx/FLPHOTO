@@ -278,6 +278,8 @@ body
 /*----de-to-sektioner-i-flexboxen-skal-fylde-50%-hver----*/
 .flphotoSiden div{
     width: 50%;
+    flex-direction: row;
+    margin-left: 7%;
 }
 
 /*----billedets-placering----*/
@@ -294,11 +296,9 @@ body
     text-transform: uppercase;
     font-size: 26px;
     color: #707070;
-    padding-left: 150px;
     margin-top: 40px;
     font-weight: 600;
     line-height: 1.8;
-
 }
 
 /*----layout-på-rubrik----*/
@@ -307,14 +307,10 @@ body
     text-transform: uppercase;
     font-size: 20px;
     color: #707070;
-    padding-left: 150px;
     padding-top: 0px;
     margin-top: 40px;
     font-weight: 500;
     line-height: 1.8;
-    
-    
-
 }
 
 /*----layout-på-brødteksten----*/
@@ -324,22 +320,18 @@ body
     color: #707070;
     margin-top: 20px;
     font-weight: 500;
-    padding-left: 150px;
     padding-top: 0px;
     padding-bottom: 0px;
     line-height: 1.8;
-    
 }
 
 /*----some-ikonernes-placering----*/
 .flphotoSiden #soMe{
     margin-top: 30px;
-    padding-left: 150px;
 }
 
 .flphotoSiden #soMe a{
     padding-right: 20px;
-    
 }
 
 /*----flexboxen-ved-videoen----*/
@@ -355,6 +347,18 @@ body
 }
 
 /*----layout-på-rubrik----*/
+.lærFilip{
+    display: flex;
+    margin: 5%;
+    margin-top: 5%;
+}
+
+.lærFilip div{
+    flex-direction: row;
+    width: 50%;
+    margin:auto;
+}
+
 .lærFilip h2{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
@@ -365,32 +369,66 @@ body
     font-weight: 600;
     line-height: 1.8;
 }
-
-#lærVideo{
-    width: 500px;
-    height: 500px;
-    background-color: pink;
+#omfilipvideo{
+    width: 50%;
 }
+
+@media only screen and (max-width: 800px) {
+    .flphotoSiden{
+        display: block;
+    }
+    .flphotoSiden div{
+        flex-direction: column;
+        width: 80%;
+    }
+    .lærFilip{
+        display: block;
+        flex-direction: column;   
+    }
+    .lærFilip div{
+        width: 80%;
+        text-align: center;
+    }
+    #omfilipvideo{
+        display: block;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .udstyrSektion{
+        display: none;
+    }
+    #udstyrsec{
+        background-color: #EEE8E1;
+    }
+}
+
+
 
 /*----layout-på-sektionen-med-udstyr----*/
 .udstyrSektion{
     background-color: #EEE8E1;
     padding-bottom: 50px;
+    max-height: 800px;
 }
 
 /*----billederne-skal-være-i-en-flexbox----*/
 .udstyr{
     display: flex;
     justify-content: center;
-    gap: 80px;
-    padding: 30px;
-    
+    gap: 5%;
+    padding: 2%;
+    height: 100%;
 }
 
  .udstyr div{
-    width: 300px;
-    height: 250px;
-    background-color: pink;
+    width: 20%;
+    height: 20%;
+ }
+
+ .udstyr div img{
+    width: 100%;
+    height: 100%;
  }
 
  /*----layout-på-rubrik----*/

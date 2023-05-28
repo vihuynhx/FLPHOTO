@@ -6,6 +6,8 @@ burgerMenu.addEventListener('click',function(){
   overlay.classList.toggle("overlay");
 });
 
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

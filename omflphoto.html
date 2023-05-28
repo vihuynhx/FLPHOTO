@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="header+footerstyle.css"> <!-- header og footer css -->
     <link rel="stylesheet" href="undersiderstyles.css"> <!--css-->
     <link rel="stylesheet" href="style.css"> <!--css-->
+    <link rel="stylesheet" href="erhvervunderside.css">
     <link rel="stylesheet" href="https://use.typekit.net/akm3tan.css"> <!--adobe font -->
-    <script src="script.js" defer></script> <!--javascript-->
+    <script src="priserscript.js" defer></script>
+    <script src="undersidescript.js" defer></script>
     <script src="https://kit.fontawesome.com/ebc2f851ed.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
     <title>OM FLPHOTO</title>
@@ -91,10 +93,11 @@
 
         <section class="lærFilip">
             <div>
-                <h2>Se videoen <br>
-                og lær Filip bedre at kende.</h2>
+                <h2>Se videoen og lær Filip bedre at kende.</h2> 
             </div>
-            <div id="lærVideo"></div>
+            <video controls id="omfilipvideo">
+                <source src="images/omflphotovideo.mp4" type="video/mp4">
+              </video>
         </section>
 
         <section class="udstyrSektion">
@@ -111,6 +114,46 @@
                 <div><img src="images/omflphoto/cam6.jpg" alt="Billede 6"/></div>
             </section>
         </section>
+
+        <div class="slideshow-container" id="udstyrsec">
+
+         
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam1.jpg" alt="Billede 1">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam2.jpg" alt="Billede 3">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam3.jpg" alt="Billede 4">
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam4.jpg" alt="Billede 5">
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam5.jpg" alt="Billede 6">
+            </div>
+            
+  
+            <div class="mySlides fade">
+              <img src="images/omflphoto/cam6.jpg" alt="Billede 7">
+            </div>
+  
+  
+            <div style="text-align:center" class="dotPlace">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+          </div>
+            
+        </div>
 
         <section id="kontaktFormular">
             <div id="kontaktContainer" > 
