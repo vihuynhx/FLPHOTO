@@ -18,6 +18,13 @@ h1{
     margin-bottom: 23px;
 }
 
+h2{
+  font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;  
+}
+
 p{
     font-family: Georgia, serif;
     font-size: 16px;
@@ -26,8 +33,6 @@ p{
 }
 
 /* Emma og Jonathan underside */
-
-
 .toboks{
   display: flex;
   width: 100%;
@@ -70,14 +75,7 @@ p{
   height: auto;
 }
 
-h2{
-  font-family: freight-neo-pro, sans-serif;  
-    font-size: 20px;
-    color: #707070;
-    font-weight: 500;  
-}
-
-
+/* Ipad og mobil */
 @media screen and (max-width: 900px) {
   .toboks{
     flex-wrap: wrap;

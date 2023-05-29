@@ -288,6 +288,8 @@ footer div:nth-child(4), footer div:nth-child(5){
     display: flex;
 }
 
+/*--------footer på ipad og mobil--------*/
+
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     footer{
         flex-wrap: wrap;
