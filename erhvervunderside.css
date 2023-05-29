@@ -5,12 +5,6 @@ body{
     margin-top: 80px;
 }
 
-#kontaktContainer 
-{
-    justify-content: center;
-    
-}
-
 h1{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
@@ -26,12 +20,17 @@ p{
     color: #707070;
 }
 
-.erhvervboks{
+#kontaktContainer 
+{
+    justify-content: center;
+}
+
+.erhvervBoks{
     width: 100%;
     display: flex;
 }
 
-.erhvervtekst{
+.erhvervTekst{
     width: 60%;
     padding: 5%;
 }
@@ -95,14 +94,7 @@ p{
 }
 
 
-
-
-
-
-
 /*----------------------------------- SAMARBEJDE ---------------------------------------*/
-
-  
 .samarbejde{
     justify-content: center;
     text-align: center;
@@ -136,14 +128,13 @@ p{
 }
 
 /*----------------------------------- IKON SERIE ---------------------------------------*/
-
-.tilfredshedsec{
+.tilfredshedSec{
     padding: 4%;
     display: flex;
     width: 100%;
 }
 
-.tilfredshedsec h2
+.tilfredshedSec h2
 {
     color: black;
     text-transform: uppercase;
@@ -153,7 +144,7 @@ p{
     font-weight: bold;
 }
 
-.tilfredshedsec p
+.tilfredshedSec p
 {
     color: #707070;
     font-family: Georgia, serif;
@@ -163,14 +154,14 @@ p{
     padding-top: 2vh;
 }
 
-.tilfredshedsec div{
+.tilfredshedSec div{
     flex-direction: row;
     width: 25%;
     padding: 2%;
     text-align: center;
 }
 
-.tilfredshedsec div img{
+.tilfredshedSec div img{
     width: 25%;
     height: auto;
     padding-bottom: 3%;
@@ -190,7 +181,7 @@ p{
     display: none;
 }
 
-.erhvervtekst{
+.erhvervTekst{
     margin: auto;
     width: 80%;
 }
@@ -310,12 +301,12 @@ p{
 }
 
 
-.tilfredshedsec{
+.tilfredshedSec{
     display: flex;
     flex-wrap: wrap;
   }
  
-  .tilfredshedsec div{
+  .tilfredshedSec div{
     width: 100%;
     padding-bottom: 60px;
   }
@@ -326,12 +317,12 @@ p{
 /*IPAD RESPONSIVE*/
 @media only screen and (min-width: 651px) and (max-width: 1023px ) 
 {
-  .tilfredshedsec{
+  .tilfredshedSec{
     display: flex;
     flex-wrap: wrap;
   }
 
-  .tilfredshedsec div{
+  .tilfredshedSec div{
     width: 50%;
   }
 }
