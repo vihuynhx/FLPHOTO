@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <!-------------------- HEADER -------------------------->
     <header>
         <div id="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
@@ -32,45 +32,45 @@
     
             <a href="https://www.facebook.com/filip.lind.16"> <i class="fa-brands fa-facebook" style="color: #707070;"></i> </a>
             <a href="https://www.instagram.com/filip.a.lind/"> <i class="fa-brands fa-instagram" style="color: #707070;"></i> </a>
-    
         </div>
     </header>
 
-
-    <header id="mobilheader">
+    <!-------------------- Mobilheader -------------------------->
+    <header id="mobilHeader">
         <div id="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
         </div>
 
-    <div id="burger-menu">
-        <span></span>
-    </div>
-
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">forside</a></li>
-            <li><a href="bryllup.html">galleri</a></li>
-            <li><a href="priser.html">priser</a></li>
-            <li><a href="erhverv.html">erhverv</a></li>
-            <li><a href="omflphoto.html">om flphoto</a></li>
-            <li><a href="kontakt.html">kontakt</a></li>
-        </ul>
-        <div id="soMe">
-            <a href="#"> <i class="fa-brands fa-facebook" style="color: #707070;"></i> </a>
-        <a href="https://www.instagram.com/filip.a.lind/"> <i class="fa-brands fa-instagram" style="color: #707070;"></i> </a>
+        <div id="burger-menu">
+            <span></span>
         </div>
-    </div>
-</header>
 
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">forside</a></li>
+                <li><a href="bryllup.html">galleri</a></li>
+                <li><a href="priser.html">priser</a></li>
+                <li><a href="erhverv.html">erhverv</a></li>
+                <li><a href="omflphoto.html">om flphoto</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+            </ul>
+            <div id="soMe">
+                <a href="#"> <i class="fa-brands fa-facebook" style="color: #707070;"></i> </a>
+            <a href="https://www.instagram.com/filip.a.lind/"> <i class="fa-brands fa-instagram" style="color: #707070;"></i> </a>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------- MAIN -------------------------->
     <main>
         <section class="prisMenu">      
             <div>
-             <a id="nu" href="priser.html">Bryllup</a>
-             <div class = "vertical4"></div>
-             <a href="fejlside.html">Portræt</a>
-             <div class = "vertical4"></div>
-             <a href="fejlside.html">Andet</a>
-            
+                <a id="nu" href="priser.html">Bryllup</a>
+                <div class = "vertical4"></div>
+                <a href="fejlside.html">Portræt</a>
+                <div class = "vertical4"></div>
+                <a href="fejlside.html">Andet</a>
+            </div>
         </section>
 
         <section class="prisTekst">
@@ -79,6 +79,7 @@
                 KLIK på din ønskede pakke og kontakt mig endelig for yderligere informationer og booking.</p>
         </section>
 
+        <!-------------------- Priserpakker -------------------------->
         <section class="prisPakker">
 
             <div class="prisContainer_venstre">
@@ -114,28 +115,27 @@
             <br>
             <div class="mySlides fade">
                 <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakkeet.png" alt="Billede 1"/>
+                    <img src="images/pakkeet.png" alt="Billede 1">
                 </a>
             </div>
             
             <div class="mySlides fade">
                 <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakketo.png" alt="Billede 2"/>
+                    <img src="images/pakketo.png" alt="Billede 2">
                 </a>
             </div>
             
             <div class="mySlides fade">
                 <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakketre.png" alt="Billede 3"/>
+                    <img src="images/pakketre.png" alt="Billede 3">
                 </a>
             </div>
-            
-            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <!---------------------------------------------------------------------->
+        
 
         <!------------------------ PRIS BEREGNER ------------------------------>
-
         <section class="prisBeregner">
             <div class="calculator">
     
@@ -163,7 +163,7 @@
                         <tr> <!-- Table row -->
                             <td> <!-- Table cell -->
                             <label>
-                                <input class="tilvalg" type="checkbox" value="1000"/> Dronebilleder
+                                <input class="tilvalg" type="checkbox" value="1000"> Dronebilleder
                             </label>
                             </td>
                             <td>1000,-</td>
@@ -171,7 +171,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="tilvalg" type="checkbox" value="500"/> 50 ekstra billeder
+                                <input class="tilvalg" type="checkbox" value="500"> 50 ekstra billeder
                             </label>
                             </td>
                             <td>500,-</td>
@@ -179,7 +179,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="tilvalg" type="checkbox" value="400"/> Filmklip
+                                <input class="tilvalg" type="checkbox" value="400"> Filmklip
                             </label>
                             </td>
                             <td>400,-</td>
@@ -187,7 +187,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="tilvalg" type="checkbox" value="500"/> Filmklip med drone
+                                <input class="tilvalg" type="checkbox" value="500"> Filmklip med drone
                             </label>
                             </td>
                             <td>500,-</td>
@@ -195,7 +195,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="tilvalg" type="checkbox" value="500"/> 1 time ekstra fotografering
+                                <input class="tilvalg" type="checkbox" value="500"> 1 time ekstra fotografering
                             </label>
                             </td>
                             <td>500,-</td>
@@ -227,32 +227,32 @@
             </div>
     
         </section>
-
-
     </main>
-    <footer>
-        <div>
-            <h2>Flphoto</h2> <br>
-            <a href="bryllup.html">galleri</a> <br>
-            <a href="priser.html">priser</a> <br>
-            <a href="erhverv.html">erhverv</a> <br>
-            <a href="omflphoto.html">om FLPHOTO</a> <br>
-            <a href="kontakt.html">kontakt</a>
-        </div>
-        
-        <div>
-            <h2>Hjælp</h2> <br>
-            <a href="fejlside.html">faq</a> <br>
-            <a href="fejlside.html">vilkår og betingelser</a> <br>
-            <a href="fejlside.html">cookie- og privatlivspolitik</a> <br>
-        </div>
-        <div></div>
-        <div class = "vertical3"></div>
-        <div>
-            <a href="https://www.facebook.com/filip.lind.16"> <i class="fa-brands fa-facebook" style="color: white;"></i> </a>
-            <a href="https://www.instagram.com/filip.a.lind/"> <i class="fa-brands fa-instagram" style="color: white;"></i> </a>
-        </div>
-    </footer>
+
+<!-------------------- FOOTER -------------------------->
+<footer>
+    <div>
+        <h2>Flphoto</h2> <br>
+        <a href="bryllup.html">galleri</a> <br>
+        <a href="priser.html">priser</a> <br>
+        <a href="erhverv.html">erhverv</a> <br>
+        <a href="omflphoto.html">om FLPHOTO</a> <br>
+        <a href="kontakt.html">kontakt</a>
+    </div>
+    
+    <div>
+        <h2>Hjælp</h2> <br>
+        <a href="fejlside.html">faq</a> <br>
+        <a href="fejlside.html">vilkår og betingelser</a> <br>
+        <a href="fejlside.html">cookie- og privatlivspolitik</a> <br>
+    </div>
+    <div></div>
+    <div class = "vertical3"></div>
+    <div>
+        <a href="https://www.facebook.com/filip.lind.16"> <i class="fa-brands fa-facebook" style="color: white;"></i> </a>
+        <a href="https://www.instagram.com/filip.a.lind/"> <i class="fa-brands fa-instagram" style="color: white;"></i> </a>
+    </div>
+</footer>
 
 </body>
 </html>

@@ -29,8 +29,8 @@ header
 
 #logo a img
 {  
-    width: 70px;
-    padding-left: 13px;
+    width: 80px;
+    padding-left: 20px;
     justify-content: center;
 }
 
@@ -62,13 +62,18 @@ header
 .fa-facebook
 {
     font-size: 30px;
+    
+    
 }
 
 .fa-instagram
 {
     margin-left: -15px;
     font-size: 30px;
+   
 }
+
+
 
 .vertical
 {
@@ -86,7 +91,7 @@ header
     font-weight: bold;
 }
 
-#mobilheader{
+#mobilHeader{
     display: none;   
 }
 
@@ -100,7 +105,7 @@ header
     width: 91%;
 }
 
-#mobilheader{
+#mobilHeader{
     display: flex;
 }
 
@@ -223,95 +228,148 @@ header
 
 /*---- Footerens-layout-og-størrelse ----*/
 footer{
-    background-color: #142D52;
-    display: flex;
-    height: 360px;
-    margin: auto;
-    padding: 80px 0px 80px 80px;
-    align-items: center;
-  }
+  background-color: #142D52;
+  display: flex;
+  height: 300px;
+  margin: auto;
+  padding: 60px 0px 60px 60px;
+  align-items: center;
+}
 
-  /*---- Diverne-skal-fylde-20%-hver ----*/
-  footer div{
-    width: 20%;
-    height: 100%;
-    flex-direction: row;
-  }
+/*---- Diverne-skal-fylde-20%-hver ----*/
+footer div{
+  width: 20%;
+  height: 100%;
+  flex-direction: row;
+}
 
 /*---- Layout-på-rubrik ----*/
-  footer h2{
-    margin: auto;
+footer h2{
+  margin: auto;
+  font-family: freight-neo-pro, sans-serif;  
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+}
+
+/*---- Layout-på-brødteksten ----*/
+footer div a{
+  margin: auto;
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 15px;
     color: white;
     letter-spacing: 1px;
-    font-weight: 600;
-    
-  }
-
-  /*---- Layout-på-brødteksten ----*/
-  footer div a{
-    margin: auto;
-      font-family: freight-neo-pro, sans-serif;  
-      text-transform: uppercase;
-      font-size: 15px;
-      color: white;
-      letter-spacing: 1px;
-      line-height: 2;
-      font-weight: 200;
-  }
+    line-height: 2;
+    font-weight: 200;
+}
 
 /*----layout-på-stregen----*/
-  .vertical3{
-    border-right: 1px solid white;
-    height: 90px;
-    display: flex;
-    
+.vertical3{
+  border-right: 1px solid white;
+  height: 90px;
+  display: flex;
+  
 }
 
 /*----størrelse-og-placering-af-sociale-medier-ikoner----*/
 footer .fa-facebook
 {
-    margin-right: -60px;
-    font-size: 50px;
+  margin-right: -80px;
+  font-size: 50px;
 }
 
 footer .fa-instagram
 {
-    font-size: 50px;
+  font-size: 50px;
+  margin-right: 50px;
 }
 
 /*----4.-og-5.-div-skal-sidde-i-midten----*/
 footer div:nth-child(4), footer div:nth-child(5){
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
+/*--------footer på ipad og mobil--------*/
+
 @media only screen and (min-width: 651px) and (max-width: 1023px){
-    footer{
-        flex-wrap: wrap;
-        height: auto;
-    }
-    footer div{
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    .vertical3{
-        height: auto;
-    }
+  footer{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  footer div{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .vertical3{
+    height: auto;
+  }
+
+  footer .fa-facebook
+{
+  font-size: 50px;
+  margin: 0;
+  padding-right: 10px;
+}
+
+footer .fa-instagram
+{
+  font-size: 50px;
+  margin: 0;
+  
+  
+}
+
+footer div:nth-child(4), footer div:nth-child(5) {
+display: block;
+}
+
 }
 
 @media screen and (max-width: 650px){
-    footer{
-        flex-direction: column;
-        height: auto;
-    }
-    footer div{
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    .vertical3{
-        height: auto;
-    }
+  footer{
+    flex-direction: column;
+    height: auto;
+  }
+  footer div{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .vertical3{
+    height: auto;
+  }
+
+  footer .fa-facebook{
+  font-size: 50px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  margin: 0;
+  padding-right: 10px;
+}
+
+footer .fa-instagram
+{
+  font-size: 50px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  align-items: left;
+}
+
+footer div a {
+margin: 0;
+}
+
+
+footer div:nth-child(4), footer div:nth-child(5) {
+justify-content: left;
+}
 }

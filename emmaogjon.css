@@ -11,11 +11,19 @@ body{
     margin-top: 80px;
 }
 
+/*----tekst layout----*/
 h1{
     font-family: freight-neo-pro, sans-serif;  
     font-size: 27px;
     color: #707070;
     margin-bottom: 23px;
+}
+
+h2{
+  font-family: freight-neo-pro, sans-serif;  
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;  
 }
 
 p{
@@ -26,68 +34,59 @@ p{
 }
 
 /* Emma og Jonathan underside */
-
-
-.toboks{
+.toBoks{
   display: flex;
   width: 100%;
   flex-direction: row;
 
 }
 
-#tilbagepil 
+#tilbagePil 
 {
   width: 10%;
   padding-bottom: 4%;
 }
 
-.indlednetekst
+.indledneTekst
 {
-    width: 50%;
+  width: 50%;
     margin: 2%;
     padding: 5% 8% 5% 5%;
 }
 
-#imgstort 
+#imgStort 
 {
     width: 50%;
 }
 
-#imgstort img{
+#imgStort img{
   width: 100%;
   height: auto;
 }
 
 /* Pil der fører tilbage til toppen */
-.tiltop{
+.tilTop{
   width: 100%;
   text-align: center;
   padding-bottom: 50px;
 }
 
-.tiltop a img{
+.tilTop a img{
   width: 40px;
   height: auto;
 }
 
-h2{
-  font-family: freight-neo-pro, sans-serif;  
-    font-size: 20px;
-    color: #707070;
-    font-weight: 500;  
-}
-
-
+/* Ipad og mobil */
 @media screen and (max-width: 900px) {
-  .toboks{
+  .toBoks{
     flex-wrap: wrap;
     width: 100%;
   }
-  .toboks div{
+  .toBoks div{
     width: 100%;
   }
 
-  #imgstort{
+  #imgStort{
     width: 100%;
     padding: 4%;
   }
