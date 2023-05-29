@@ -12,8 +12,6 @@ body
     
 }
 
-
-
 /*--------------FEJL-SIDEN--------------*/
 
 /*----layout-på-overskriften----*/
@@ -99,12 +97,7 @@ body
     width: 70%;
     margin: auto;
 }
-
 }
-
-
-
-  
 
   /*--------------OMFLPHOTO-SIDEN--------------*/
 
@@ -211,6 +204,7 @@ body
     width: 50%;
 }
 
+   /* Responsive til ipad */
 @media only screen and (max-width: 800px) {
     .flphotoSiden{
         display: block;
@@ -240,8 +234,6 @@ body
         background-color: #EEE8E1;
     }
 }
-
-
 
 /*----layout-på-sektionen-med-udstyr----*/
 .udstyrSektion{

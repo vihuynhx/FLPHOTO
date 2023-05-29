@@ -16,7 +16,6 @@
     display: block;
 }
 
-
 .ydelser
 {
     text-align: center;
@@ -54,11 +53,11 @@
     padding-bottom: 7vh;
 }
   
-  #billedeLink
-  {
+#billedeLink
+{
     position: relative;
     gap:12px;
- }
+}
   
   #billedeLink img 
   {
@@ -97,6 +96,7 @@
     display: none;
   }
 
+/* Responsive til ipad */
   @media only screen and (min-width: 651px) and (max-width: 1023px){
     .kategori {
         flex-wrap: wrap;
@@ -118,9 +118,9 @@
     #billedeTekst{
         color: transparent;
     }
+}
 
-    }
-   
+   /* Responsive til mobil */
   @media screen and (max-width: 650px){
     .ydelser{
         padding-left: 5vh;
@@ -187,15 +187,12 @@
     margin:auto;
 }
 
-
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
 @media screen and (min-width: 800px) {
     .slideshow-container{
         display: none;
     }
 }
-
-
 
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
 @media screen and (max-width: 800px) {
@@ -390,6 +387,7 @@
     font-weight: bold;
 }
 
+   /* Responsive til ipad */
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     .omflphoto{
         padding-left: 5% ;
@@ -401,6 +399,7 @@
     }
 }
 
+   /* Responsive til mobil */
 @media only screen and (max-width: 650px){
     .omflphoto{
         flex-direction: column;
@@ -462,6 +461,7 @@
     font-style: normal;
 }
 
+   /* Responsive til ipad */
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     .infographic{
         flex-wrap: wrap;
@@ -472,6 +472,7 @@
     }
 }
 
+   /* Responsive til mobil */
 @media only screen and (max-width: 650px){
     .infographic{
         flex-direction: column;
@@ -554,8 +555,6 @@
     width: 100%;
     font-family: "georgiapro", serif;
     font-size: 14px;
-
-
 }
 
 #beskedIndhold
@@ -569,13 +568,11 @@
     resize: none;
     font-family: "georgiapro", serif;
     font-size: 14px;
-
 }
 
 #sendKnap
 {
     text-align: center;
-
 }
 
 #kontaktFormular button
@@ -593,6 +590,7 @@
     font-weight: bold;
 }
 
+   /* Responsive til ipad */
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     #kontaktContainer{
         width: 60%;
@@ -603,9 +601,9 @@
         width: 100%;
         margin: auto;
     }
-    
 }
 
+   /* Responsive til mobil */
 @media only screen and (max-width: 650px){
     #kontaktContainer{
         width: 60%;
@@ -660,6 +658,7 @@
     padding-bottom: 3%;
 }
 
+   /* Responsive til ipad */
 @media only screen and (min-width: 651px) and (max-width: 1023px){
     .tilfredshedsec{
         display: flex;
@@ -671,6 +670,7 @@
       }
 }
 
+   /* Responsive til mobil */
   @media only screen and (max-width: 650px){
     .tilfredshedsec{
         display: flex;
