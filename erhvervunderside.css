@@ -222,17 +222,13 @@ p{
     margin-bottom: 50px;
   }
   
-
-  
-
-
   /*---prikkerne viser hvilken side du er indenpå----*/
   .active, .dot:hover {
     background-color: #717171;
   }
   
  /* Fading animation */
-.fade {
+  .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -265,43 +261,43 @@ p{
     padding: 4%;
     display: flex;
     width: 100%;
-}
+  }
 
-.mySlides h2
-{
-    color: black;
-    text-transform: uppercase;
-    font-family: freight-neo-pro, sans-serif;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: bold;
-}
+  .mySlides h2
+  {
+      color: black;
+      text-transform: uppercase;
+      font-family: freight-neo-pro, sans-serif;
+      letter-spacing: 1px;
+      font-size: 18px;
+      font-weight: bold;
+  }
 
-.mySlides p
-{
-    color: #707070;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 2;
-    padding-top: 2vh;
-}
+  .mySlides p
+  {
+      color: #707070;
+      font-family: Georgia, serif;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 2;
+      padding-top: 2vh;
+  }
 
-.mySlides div{
-    flex-direction: column;
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-}
+  .mySlides div{
+      flex-direction: column;
+      width: 100%;
+      padding: 2%;
+      text-align: center;
+  }
 
-.mySlides div img{
-    width: 50%;
-    height: auto;
-    padding-bottom: 3%;
-}
+  .mySlides div img{
+      width: 50%;
+      height: auto;
+      padding-bottom: 3%;
+  }
 
 
-.tilfredshedSec{
+  .tilfredshedSec{
     display: flex;
     flex-wrap: wrap;
   }
