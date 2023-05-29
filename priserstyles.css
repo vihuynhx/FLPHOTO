@@ -234,7 +234,7 @@ tr:nth-child(5) td
 
 hr
 {
-    border: solid #B5B0AB 0.5px;
+    border: solid #B5B0AB 0.5px; 
     border-radius: 25px;
     margin: 3vh 0 3vh 0;
 }
