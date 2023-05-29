@@ -140,7 +140,7 @@ body
     text-transform: uppercase;
     font-family: freight-neo-pro, sans-serif;
     line-height: 2;
-    letter-spacing: 1;
+    letter-spacing: 1px;
 }
 
 #pakkeVaelger 
