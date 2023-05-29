@@ -81,7 +81,7 @@
 
         <section class="prisPakker">
 
-            <div class="prisContainer">
+            <div class="prisContainer_venstre">
                 <a href="kontakt.html" id="prisLink">
                     <img src="images/pakkeet.png" alt="Billede 1"/>
                 </a>
@@ -94,13 +94,45 @@
                 </a>
             </div>
     
-            <div class="prisContainer">
+            <div class="prisContainer_hojre">
                 <a href="kontakt.html" id="prisLink">
                     <img src="images/pakketre.png" alt="Billede 3"/>
                 </a>
             </div>
 
         </section>
+
+
+        <!------------------------TIL MOBIL------------------------------>
+        <div class="slideshow-container">
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <br>
+            <div class="mySlides fade">
+                <a href="kontakt.html" id="prisLink">
+                    <img src="images/pakkeet.png" alt="Billede 1"/>
+                </a>
+            </div>
+            
+            <div class="mySlides fade">
+                <a href="kontakt.html" id="prisLink">
+                    <img src="images/pakketo.png" alt="Billede 2"/>
+                </a>
+            </div>
+            
+            <div class="mySlides fade">
+                <a href="kontakt.html" id="prisLink">
+                    <img src="images/pakketre.png" alt="Billede 3"/>
+                </a>
+            </div>
+            
+            
+        </div>
+        <!---------------------------------------------------------------------->
 
         <!------------------------ PRIS BEREGNER ------------------------------>
 
@@ -131,7 +163,7 @@
                         <tr> <!-- Table row -->
                             <td> <!-- Table cell -->
                             <label>
-                                <input class="setup-costs" type="checkbox" value="1000"/> Dronebilleder
+                                <input class="tilvalg" type="checkbox" value="1000"/> Dronebilleder
                             </label>
                             </td>
                             <td>1000,-</td>
@@ -139,7 +171,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="setup-costs" type="checkbox" value="500"/> 50 ekstra billeder
+                                <input class="tilvalg" type="checkbox" value="500"/> 50 ekstra billeder
                             </label>
                             </td>
                             <td>500,-</td>
@@ -147,7 +179,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="setup-costs" type="checkbox" value="400"/> Filmklip
+                                <input class="tilvalg" type="checkbox" value="400"/> Filmklip
                             </label>
                             </td>
                             <td>400,-</td>
@@ -155,7 +187,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="setup-costs" type="checkbox" value="500"/> Filmklip med drone
+                                <input class="tilvalg" type="checkbox" value="500"/> Filmklip med drone
                             </label>
                             </td>
                             <td>500,-</td>
@@ -163,7 +195,7 @@
                         <tr>
                             <td>
                             <label>
-                                <input class="setup-costs" type="checkbox" value="500"/> 1 time ekstra fotografering
+                                <input class="tilvalg" type="checkbox" value="500"/> 1 time ekstra fotografering
                             </label>
                             </td>
                             <td>500,-</td>
@@ -189,44 +221,13 @@
     
                 <hr>        
     
-                <div class="priceBox">
-                    <h2> Estimeret beløb: <span id="price">0</span> DKK </h2>
+                <div class="prisBox">
+                    <h2> Estimeret beløb: <span id="livePris">0</span> DKK </h2>
                 </div>
             </div>
     
         </section>
 
-
-            <!------------------------TIL MOBIL------------------------------>
-        <div class="slideshow-container">
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            <br>
-            <div class="mySlides fade">
-                <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakkeet.png" alt="Billede 1"/>
-                </a>
-            </div>
-            
-            <div class="mySlides fade">
-                <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakketo.png" alt="Billede 2"/>
-                </a>
-            </div>
-            
-            <div class="mySlides fade">
-                <a href="kontakt.html" id="prisLink">
-                    <img src="images/pakketre.png" alt="Billede 3"/>
-                </a>
-            </div>
-          
-            
-        </div>
-        <!---------------------------------------------------------------------->
 
     </main>
     <footer>

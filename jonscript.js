@@ -1,4 +1,4 @@
-//1) Henter alle elementer fra html
+// Henter alle elementer fra html
 
 const billeder = document.querySelectorAll('.gallery img'); 
 const fuldskaerm = document.getElementById('fuldsskaerm'); 
@@ -8,12 +8,10 @@ const hojrePil = document.querySelector('.hojre');
 const exit = document.querySelector('.exit'); 
 
 //EventListener 'lytter' til click
-
 venstrePil.addEventListener('click', tilbage);
 hojrePil.addEventListener('click', frem);
 exit.addEventListener('click', luk);
 document.addEventListener('keydown', navigerMedTastatur); //keydown er en js-keyboardevent 
-
 
 let vistPaSkaerm = 0; //definer en let varibel 'vistPaSkaerm' som bruges til at 'holde styr' hvad der vises. Starter på 0, derfor er det billede nr.1 
 

@@ -16,7 +16,8 @@ body
 /*----undermenuen paa siden----*/
 
 /*----whitespace----*/
-.prisMenu{
+.prisMenu
+{
     padding-top: 4%;
 }
 
@@ -60,26 +61,24 @@ body
 /*----Pakkerne paa siden----*/
 
 /*----flexboxen-af-pakkerne----*/
-.prisPakker{
+.prisPakker
+{
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin: 50px;
-    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
 /*----placeringen-af-pakkerne----*/
-.prisContainer a {
-    display: flex;
-    justify-content: center;
-    margin: -55px;
-    margin-bottom: 50px;
+.prisContainer_venstre
+{padding-left: 100px;}
+.prisContainer_hojre
+{
+    padding-right: 100px;
 }
-
 /*----pakkerne-størrelse----*/
 .prisPakker img {
-    width: 72%;
+    width: 80%;
 }
 
 /*----hovereffekt-på-pakkerne----*/
@@ -128,7 +127,7 @@ body
     margin: 2vh 0 2vh 0;
 }
 
-.calculator p, .prisBeregner .tjekListe .setup-costs, .tjekListe td, .kilometerAdresse p
+.calculator p, .prisBeregner .tjekListe .tilvalg, .tjekListe td, .kilometerAdresse p
 {
     font-family: Georgia, serif;
     font-size: 16px;
@@ -240,7 +239,7 @@ hr
     margin: 3vh 0 3vh 0;
 }
 
-.priceBox h2, .priceBox #price
+.prisBox h2, .prisBox #livePris
 {
     text-transform: uppercase;
     font-family: Georgia, serif;
@@ -250,7 +249,7 @@ hr
     margin-bottom: 3vh;
 }
 
-.priceBox #price
+.prisBox #livePris
 {
     padding-left: 8vw;
     border-bottom: solid #707070 1px;
@@ -262,7 +261,29 @@ hr
         width: 60%;
     }
 
+    .kilometerLabel{
+        left: 24vw;
+    }
+
     
+}
+
+@media screen and (max-width: 650px){
+    .calculator{
+        width: 70%;
+    }
+
+    #pakkeVaelger{
+        width: 100%;
+    }
+
+    .kilometer{
+        width: 100%;
+    }
+
+    .kilometerLabel{
+        left: 58vw;
+    }
 }
 
 /*---RESPONSIVE AF PRIS-SIDEN layout til telefon----*/
