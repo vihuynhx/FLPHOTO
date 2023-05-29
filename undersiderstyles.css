@@ -204,7 +204,7 @@ body
     width: 50%;
 }
 
-   /* Responsive til ipad */
+   /* Responsive til telefon */
 @media only screen and (max-width: 800px) {
     .flphotoSiden{
         display: block;
@@ -230,9 +230,29 @@ body
     .udstyrSektion{
         display: none;
     }
-    #udstyrsec{
+    #udstyrSec{
         background-color: #EEE8E1;
+        padding-bottom: 20px;
     }
+
+    #udstyrSec h2{
+    font-family: freight-neo-pro, sans-serif;  
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #707070;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: center;
+    }
+
+    #udstyrSec p{
+        text-align: center;
+        margin-top: -110px;
+    }
+
+   
 }
 
 /*----layout-på-sektionen-med-udstyr----*/
@@ -259,6 +279,10 @@ body
  .udstyr div img{
     width: 100%;
     height: 100%;
+ }
+
+ .udstyr p{
+    text-align: center;
  }
 
  /*----layout-på-rubrik----*/

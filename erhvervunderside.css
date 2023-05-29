@@ -252,6 +252,11 @@ p{
     height: 130%;
   }
 
+  #madeToFit{
+    width: auto;
+    height: 65%;
+ }
+
   .samarbejde{
     padding: 40px;
   }

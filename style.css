@@ -228,6 +228,7 @@
 .slideshow-container {
     max-width: 1000px;
     position: relative;
+    margin-bottom: 20px;
   }
 
   .slideshow-container img{
@@ -253,6 +254,7 @@
 
   .dotPlace{
     text-align: center;
+    margin-top: -10px;
   }
   
   .active, .dot:hover {
@@ -270,8 +272,43 @@
     to {opacity: 1}
   }
   
- 
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.3);
+  }
+
+
+  .mySlides img{
+    width: 85%;
+  }
+
+  .anmeldelser div h3{
+    margin-bottom: -8vh;
+}
+}
+
 
 /*----------------------------------- STORT BILLEDE ---------------------------------------*/
 
@@ -423,12 +460,17 @@
 .infographic
 {
     background-color:#EEE8E1 ;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     display: flex;
     text-align: center;
     padding-left: 8%;
     padding-right: 8%;
+    flex-wrap: wrap;
+}
+
+#infoOverskrift{
+    width: 100%;
 }
 
 .infographic div
@@ -437,9 +479,20 @@
     padding-left: 2%;
     padding-right: 2%;
     color:#707070;
+    width: 20%;
 }
 
-.infographic div h1
+.infographic h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 5vh;
+    font-family: freight-neo-pro, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.infographic div h2
 {
     top:0%;
     text-transform: uppercase;
@@ -449,6 +502,7 @@
     padding-bottom: 3vh;
     font-family: freight-neo-pro, sans-serif;
     letter-spacing: 1.5px;
+    
 }
 
 .infographic div p
@@ -468,8 +522,11 @@
     }
     .infographic div{
         width: 30%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5vh;
     }
+
 }
 
    /* Responsive til mobil */
@@ -477,6 +534,12 @@
     .infographic{
         flex-direction: column;
         gap: 50px;
+        
+    }
+
+    .infographic div{
+        width: 80%;
+        margin: auto;
     }
 
 }
@@ -684,4 +747,3 @@
         margin-top: 5%;
     }
   }
-  

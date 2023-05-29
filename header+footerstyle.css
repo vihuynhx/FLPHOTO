@@ -62,13 +62,18 @@ header
 .fa-facebook
 {
     font-size: 30px;
+    
+    
 }
 
 .fa-instagram
 {
     margin-left: -15px;
     font-size: 30px;
+   
 }
+
+
 
 .vertical
 {
@@ -225,9 +230,9 @@ header
 footer{
   background-color: #142D52;
   display: flex;
-  height: 360px;
+  height: 300px;
   margin: auto;
-  padding: 80px 0px 80px 80px;
+  padding: 60px 0px 60px 60px;
   align-items: center;
 }
 
@@ -273,13 +278,14 @@ footer div a{
 /*----størrelse-og-placering-af-sociale-medier-ikoner----*/
 footer .fa-facebook
 {
-  margin-right: -60px;
+  margin-right: -80px;
   font-size: 50px;
 }
 
 footer .fa-instagram
 {
   font-size: 50px;
+  margin-right: 50px;
 }
 
 /*----4.-og-5.-div-skal-sidde-i-midten----*/
@@ -295,6 +301,7 @@ footer div:nth-child(4), footer div:nth-child(5){
     flex-wrap: wrap;
     height: auto;
   }
+  
   footer div{
     width: 100%;
     margin-bottom: 25px;
@@ -302,6 +309,26 @@ footer div:nth-child(4), footer div:nth-child(5){
   .vertical3{
     height: auto;
   }
+
+  footer .fa-facebook
+{
+  font-size: 50px;
+  margin: 0;
+  padding-right: 10px;
+}
+
+footer .fa-instagram
+{
+  font-size: 50px;
+  margin: 0;
+  
+  
+}
+
+footer div:nth-child(4), footer div:nth-child(5) {
+display: block;
+}
+
 }
 
 @media screen and (max-width: 650px){
@@ -316,4 +343,33 @@ footer div:nth-child(4), footer div:nth-child(5){
   .vertical3{
     height: auto;
   }
+
+  footer .fa-facebook{
+  font-size: 50px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  margin: 0;
+  padding-right: 10px;
+}
+
+footer .fa-instagram
+{
+  font-size: 50px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  align-items: left;
+}
+
+footer div a {
+margin: 0;
+}
+
+
+footer div:nth-child(4), footer div:nth-child(5) {
+justify-content: left;
+}
 }
