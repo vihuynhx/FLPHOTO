@@ -93,10 +93,14 @@ body
         padding: 20px;
     }
 
-.taksideBillede img{
-    width: 70%;
-    margin: auto;
-}
+    .taksideBillede img{
+        width: 70%;
+        margin: auto;
+    }
+
+    .flphotoSiden #soMe{
+        display: block;
+    }
 }
 
   /*--------------OMFLPHOTO-SIDEN--------------*/
@@ -127,7 +131,7 @@ body
     text-transform: uppercase;
     font-size: 26px;
     color: #707070;
-    margin-top: 40px;
+    padding-top: 7%;
     font-weight: 600;
     line-height: 1.8;
 }
@@ -159,6 +163,7 @@ body
 /*----some-ikonernes-placering----*/
 .flphotoSiden #soMe{
     margin-top: 30px;
+    margin-left: 0;
 }
 
 .flphotoSiden #soMe a{
@@ -166,31 +171,19 @@ body
 }
 
 /*----flexboxen-ved-videoen----*/
-.lærFilip{
+.laerFilip{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 7%;
 }
 
-.lærFilip div{
+.laerFilip div{
     margin: auto;
-}
-
-/*----layout-på-rubrik----*/
-.lærFilip{
-    display: flex;
-    margin: 5%;
-    margin-top: 5%;
-}
-
-.lærFilip div{
     flex-direction: row;
     width: 50%;
-    margin:auto;
 }
 
-.lærFilip h2{
+.laerFilip h2{
     font-family: freight-neo-pro, sans-serif;  
     text-transform: uppercase;
     font-size: 25px;
@@ -213,11 +206,11 @@ body
         flex-direction: column;
         width: 80%;
     }
-    .lærFilip{
+    .laerFilip{
         display: block;
         flex-direction: column;   
     }
-    .lærFilip div{
+    .laerFilip div{
         width: 80%;
         text-align: center;
     }
