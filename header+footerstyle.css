@@ -204,6 +204,7 @@ header
   opacity: 1;
   padding-top:100px;
   background:white;
+  border-bottom: solid #707070 2px;
 }
 
 #menu li{
